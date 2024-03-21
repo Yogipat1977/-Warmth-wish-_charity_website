@@ -1,0 +1,208 @@
+body
+{
+   background-color:Hsl(222, 100%, 99%);
+}
+.div1
+{
+    background-color: #F4E0B9;
+    display: flex;
+    justify-content: space-around;
+    height: 20%;
+    width: 100%;
+    padding-bottom: 3%;
+    
+}
+.btn
+{
+   inset-inline-end: 100%;
+}
+
+.btn button
+{
+    float: inline-end;
+    border-radius: 5px;
+    height: 30px;
+    width: 65px;
+    margin-top: 30px;
+    margin-right: 10px;
+    border-color:#290001 ;
+    cursor: pointer; 
+    border-radius: 20px;
+    background-color: transparent;
+    padding: auto;
+    color: #290001;
+    transition: background-color 0.3s ease-in;
+   
+}
+.btn button:hover
+  {
+    background-color: #290001; /* Change background color on hover */
+    color: #DBCBBD;
+  }
+
+
+.div1 img
+{
+    margin-top: 13px;
+    height: 130px;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.div2 
+{
+     background-color: #DBCBBD;
+     height: 45px;
+     padding-inline-end: 9%;
+}
+.div2 button
+ {
+    margin: 05px;  
+    padding: 10px 20px ;
+    background-color: transparent;
+    border: 0; 
+    float :right;
+    position: relative; 
+    cursor: pointer; /* Change cursor to pointer on hover */
+    overflow: hidden;
+    color:#290001;
+
+ }
+
+ .div2 button::before
+  {
+    content: ''; 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    width: 0; 
+    height: 4%;
+    background-color: #290001;
+    transition: width 0.3s ease, color 0.3s ease; 
+    
+  }
+
+
+.div2 button:hover::before 
+{
+    width: 100%; 
+}
+ h1
+{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 50px;
+  background-image: url('./arun-clarke-HD0_9HvELKI-unsplash.jpg'); 
+  background-size: cover;
+  background-clip: text; 
+  -webkit-background-clip: text; 
+  color: transparent; 
+
+}
+
+/*.SearchBar
+{
+  background-color: #F4E0B9;
+  position: absolute;
+  top: 23.9%;
+  left:44%;
+  transform: translate(-20%,-30%);
+  width: 360px;
+  height: 30px;
+  transition: .5s;
+  display: flex;
+
+}
+.SearchBar button 
+{
+  border-radius: 30px;
+
+}
+
+.SearchBar button
+{position: realtive;
+  border-radius: 30px;
+  height: 40px;
+  width: 45px;
+  left: 10px;
+  background-color: transparent;
+  border-color: #290001;
+}
+ .SearchBar input
+ {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  font-size: 15px;
+  padding-left: 20px;
+  color: #290001;
+  box-shadow: -4px -4px 11px #290001,
+   8px 8px 11px #290001; 
+   transition: .5s;
+ }
+
+ 
+*/
+
+ .div2 .donateBtn
+{
+  position: absolute;
+  float: left;
+  background-color: #290001;
+  color: #DBCBBD;
+  border-radius: 20px;
+  left: 2%;
+  font-size: 15px;
+}
+/*
+.div2 input
+{
+  position: absolute;
+  width: 2%;
+  height: 5.2%;
+  left: 16%;
+  background-color: transparent;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  font-size: 15px;
+  padding-left: 20px;
+  color: #290001;
+  box-shadow: 
+   8px 8px 11px #290001;  
+   transition: .5s;
+} 
+
+.div2 input:focus
+ {
+  box-shadow: -10px -10px 20px #290001,
+   10px 10px 20px #290001; 
+   width: 23%;
+ }
+*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container
+{
+  height: 0vh;
+  margin-inline: 1.5rem;
+  display: grid;
+  place-items: centre;
+}
+.search
+{
+  position: relative;
+  width: 500px;
+  height: 30px;
+  background-color:transparent;
+  box-shadow: 0 4px 24px hsla(0, 0%, 0%, 0.1);
+
+}

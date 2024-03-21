@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warmth Wish</title>
+        
+        
+
+<link rel="stylesheet" href="Warmth%20Wish_files/Index.css"><link href="Warmth%20Wish_files/remixicon.css" rel="stylesheet"></head>
+<body>
+    <div class="div1"> 
+        <img src="Warmth%20Wish_files/warmth-wish-high-resolution-logo-transparent.png" alt=" my website logo">
+        <h1 class="h1">WELCOME !<br> WARMTH WISH  </h1>
+      
+
+         <div class="btn">
+                <button> Sign In</button>
+                <button>Log In</button>  
+         </div>
+    </div>
+
+
+    <div class="div2">
+        
+         <a href="http://127.0.0.1:5501/week%2012%20individual%20%20final%20coursework/AboutUs.html"> <button>About Us</button></a> 
+         <a href="http://127.0.0.1:5501/week%2012%20individual%20%20final%20coursework/ContactMe.html"><button>Contact us</button> </a>
+         <a href="http://127.0.0.1:5501/week%2012%20individual%20%20final%20coursework/OurAssortments.html"> <button>Our Assortments </button></a> 
+         <a href="http://127.0.0.1:5501/week%2012%20individual%20%20final%20coursework/Events.html"> <button>Events</button></a> 
+         <a href="http://127.0.0.1:5501/week%2012%20individual%20%20final%20coursework/OurServices.html"><button> Our Services</button></a> 
+        <button class="donateBtn">Donate Us</button>
+
+                <div class="container">
+
+                    <form action="https://www.google.com/search" class="search" id="search-bar"></form>
+                            <input type="Search" placeholder="Search Here..." class="Search-input"> 
+                            <div class=" Search-Button" id="Search-btn">
+                                <i class="ri-search-2-line search__icon"></i>
+                                <i class="ri-close-line search__close"></i>
+                            </div> 
+                     
+                 </div>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

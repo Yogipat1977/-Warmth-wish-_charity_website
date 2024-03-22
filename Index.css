@@ -492,7 +492,7 @@ section
  {
   position: absolute;
   color: #290001;
-  bottom:0s;
+  bottom:0;
   left: 45%;
   transform: translateY(-50%);
   font-weight: bold;
@@ -753,8 +753,22 @@ section
     align-items: center;
     height: 30%;
     width: 100%;
+    transition: all 1s ease;
    
   }
+  .our-Events_Intro .animate
+{
+ transform: translateY(0);
+ opacity: 0;
+ transition: 1s;
+
+
+}
+ .our-Events_Intro.Show-Animation .animate
+{
+ transform: translateY(-80%);
+ opacity: 1;
+}  
 
 .our-Events_Intro h2
 {
@@ -818,17 +832,7 @@ section
 }
 
 
-.our-Events_Intro .animate
-{
- transform: translateY(0);
- opacity: 0;
-
-}
- .our-Events_Intro .Show-Animation .animate
-{
- transform: translateY(100%);
- opacity: 1;
-}   
+ 
 .volunteer_Events, .Awareness_Events, .Maintenance_and_Safety
 {
   height: 400px;
@@ -840,6 +844,7 @@ section
   border-radius: 10px;
   cursor: pointer;
 }
+
 
 .volunteer_Events 
 {

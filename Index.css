@@ -494,7 +494,7 @@ section
   color: #290001;
   bottom:0;
   left: 45%;
-  transform: translateY(-50%);
+  transform: translateY(40%);
   font-weight: bold;
 }
 .OurServices_intro
@@ -998,7 +998,12 @@ section
 
 .div6
 {
-
+  height: 700px; 
+  width: 100%;
+  background:  linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(./Our-Donation\ \ bg\ img.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 /* 
 .div7

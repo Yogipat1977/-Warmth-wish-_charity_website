@@ -31,7 +31,7 @@ function stickyNavbar()
 
  document.addEventListener('DOMContentLoaded', function()
 {
-  var videoList =['video 1.mp4','video 2.mp4','video3.mp4','video 4.mp4'];
+  var videoList =['video 1.mp4','video 2.mp4','video3.mp4','video.mp4'];
   var currentVideo =0;
   var videoElement = document.getElementById('video');
    function changeVideo() 

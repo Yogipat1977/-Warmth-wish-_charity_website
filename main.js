@@ -31,7 +31,7 @@ function stickyNavbar()
 
  document.addEventListener('DOMContentLoaded', function()
 {
-  var videoList =['video 1.mp4','video 2.mp4','video3.mp4','video.mp4'];
+  var videoList =['video 1.mp4','video 2.mp4','video3.mp4','video 4.mp4'];
   var currentVideo =0;
   var videoElement = document.getElementById('video');
    function changeVideo() 
@@ -111,4 +111,20 @@ let observer = new IntersectionObserver(entries => {
 // Observe each div
 divs.forEach(div => {
   observer.observe(div);
+});
+
+
+// Add scroll event listener to the window
+window.addEventListener('scroll', function() 
+{
+  var navbar = document.getElementById('navbar');
+  
+  // Check if the navbar touches the top of the window
+  if (window.scrollY > 159) 
+  {
+      navbar.classList.add('blur'); // Add blur class to navbar
+  } else
+   {
+      navbar.classList.remove('blur'); // Remove blur class from navbar
+  }
 });

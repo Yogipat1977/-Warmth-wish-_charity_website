@@ -341,7 +341,6 @@ article a
   bottom: 0;
   text-align: center;
    padding: 8px;
-  
   text-decoration: none;
    height: 8%;
    width: 25%;
@@ -394,8 +393,9 @@ article a:hover::after
   margin: 0;
   height:140%;
   width: 100%;
- background-color: #DBCBBD;
- background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),url(./4198004.jpg);
+ /* background-color: #DBCBBD; */
+ /* background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(./4198004.jpg); */
+ background-color:#293040 ;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -418,7 +418,7 @@ article a:hover::after
 }
 .donate-info-heading-1
 {
-  color: #290001;
+  color: #FFE6A7;
   position: relative;
   font-family: "Lobster", sans-serif;
   font-size: 50px;
@@ -453,60 +453,117 @@ article a:hover::after
   left: 44%;
   transform: translateX(-50%);
   transform: translateY(50%);
-  color: #290001;
+  color: #FFE6A7;
   font-weight: bold;
 }
 
 .blockquote-pera
 {
  position: relative;
- margin-left: 20px;
+ margin-top: 10%;
+ margin-left: -40px;
+ font-family: Trebuchet,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+ color: #FFE6A7;
+ text-align: right;
+ font-size: 45px;
+ font-weight: 900;
+
+}
+.blockquote-pera p
+{
+   font-size: 35px;
 }
 
-.button-box
+
+.blockquote-pera-2
 {
-  height: 180px;
-  width: 180px;
-  background: radial-gradient(circle, #bb9457 0%, #432818 100%);
-  margin-top: 0%;
-  border-radius: 50%;
+  position: relative;
   display: flex;
+  margin-top: 10%;
+  text-align: center;
+  margin-bottom: 10;
   justify-content: center;
-  cursor: pointer;
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
-  transition: all 0.3s ease;
+  font-size: 20px;
+  color: #FFE6A7;   
+  text-align: right;
+  font-weight: 500;
+  margin-left:30px; 
+}
+.blockquote-pera-3
+{
+  position: relative;
+  display: flex;
+  text-align: center;
+
+  justify-content: center;
+  font-size: 20px;
+  color: #FFE6A7;   
+  text-align: right;
+  font-weight: 500;
+  margin-left:50px; 
 }
 
-.button-box:hover
+.button-boxes
 {
-  transform: scale(1.1);
+
+   display: flex;
+   flex-direction: row ;
+   justify-content: space-evenly;
+   align-items: center;
+  height: 100px;
+  width: 40%;
 }
-.button-box a
+ 
+.button-boxes a
 {
-  margin-top: 13%;
-  height:130px;
-  width: 130px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
+  position: relative;
+  text-align: center;
+  padding-top: 8px; 
+  height:40%;
+  width:40%;
+  text-decoration: none;
+  color: #F4E0B9;
+  font-weight: 500;
+  font-size: 15px;
+  background-color: transparent;
+  border:2px solid #F4E0B9;
+   border-radius: 20px; 
+   z-index: 1;
   cursor: pointer;
-  border:none;
-  background: radial-gradient(circle, #99582a 0%, #ffe6a7 100%);
+  transition: color 300ms ease;
+}
+.button-boxes a::before
+{
+  content:'';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  border-radius:20px; 
+  background-color:#F4E0B9;
+  z-index: -1;
+  transform: scaleX(0);
+  transition: transform 300ms ease-in-out;
+}
+.button-boxes a:hover::before
+{
+  transform: scaleX(1);
   color: #290001;
-  font-size: 30px;
-  font-family: "Lobster", sans-serif;
-  font-weight: 400;
- text-decoration: none;
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.10);
-  transition: all 0.3s ease;
 }
-.donate-info-donate_btn:hover
+.button-boxes a:hover
 {
-  transform: scale(1.1);
-  transition-delay: 0.1s;
-  margin-top: 14%;
+  color: #290001;
+  font-weight: 500;
+
 }
+.button-boxes span
+{
+  position: absolute;
+  top:5.7px;
+  margin-right:10px;
+}
+
 .div4
 {
   background-color: #FDEEDC;
@@ -520,7 +577,7 @@ section
  {
    display: flex;
    justify-content: space-evenly;
-   height:500px;
+   height:550px;
    background-color: transparent;
     position: relative;
  
@@ -531,6 +588,21 @@ section
   transition: 1s;
  }
  
+ .sec-2
+ {
+   display: flex;
+   justify-content: space-evenly;
+   height:400px;
+   background-color: transparent;
+    position: relative;
+ 
+ }
+ 
+ .sec-2 .animate
+ {
+  transition: 1s;
+ }
+
  #Services_heading
  {
 
@@ -582,19 +654,22 @@ section
 }
 .OurServices_intro
 {
+  position: absolute;
   text-align: center;
   height: 30%;
-  margin: 30px;
+  margin: 60px;
   display: flex;
   align-items: center;
-  position: absolute;
+ font-size:20px;
 }
 
  .div_1
 {
+   margin-top: 40px;
   display: inline-flex;
   flex-direction: column;
   align-items:center;
+  flex-basis: 25%;
   justify-content: space-around;
 
 }
@@ -627,29 +702,43 @@ section
 .div_1 h3
 {
   color: #290001;
-   margin-top: 30%;
+  margin-top: 35%; 
  
 }
 
 .div_1 p
 {
-  color: #F1A661;
+  color: #6f1d1b;
+  font-weight: 600;
   font-size: 15px;
+  text-align: center;
 
 }
+.div_1  a
+{
 
+  color: #290001;
+  font-weight: bold;
+}
+.div_1  a span
+{
+  position: absolute;
+  
+}
 .div_2
 {
   display: inline-flex;
   flex-direction: column;
   align-items:center;
+  margin-top: 40px;
+  flex-basis: 25%;
   justify-content:space-around;
 }
  
 .div_2 img
 {
   position: relative;
-  top: 150px;
+  top: 160px;
   width: 150px;
   height: 150px;
   background-color: #290001;
@@ -660,7 +749,7 @@ section
 
  .div_2 .animate
  {
-  transform: scale(.6);
+  transform: scale(0.6);
   opacity: 0;
   border-radius: 0;
  }
@@ -674,27 +763,41 @@ section
 {
 
  color: #290001;
-  margin-top: 30%;
+ margin-top: 40%; 
 }
 
 .div_2 p
 {
- color: #F1A661;
- font-size: 15px;
-
+  color: #6f1d1b;
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+}
+.div_2 a
+{
+  color: #290001;
+  font-weight: bold;
+}
+.div_2  a span
+{
+  position: absolute;
+  
 }
 .div_3
 {
   display: inline-flex;
   flex-direction: column;
   align-items:center;
+  margin-top: 40px;
+  flex-basis: 25%;
+  position: relative;
   justify-content: space-around;
 }
  
 .div_3 img
 {
    position: relative;
-   top: 150px;
+   top: 160px;
    width: 150px;
    height: 150px;
    background-color: #290001;
@@ -717,26 +820,38 @@ section
 
 .div_3 h3 
 {
+  
  color: #290001;
- margin-top: 30%;
+ margin-top: 40%; 
 }
 
 .div_3 p
 {
+  color: #6f1d1b;
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+}
+.div_3 a
+{
 
- color: #F1A661;
- font-size: 15px;
-
+  color: #290001;
+  font-weight: bold;
 }
 
-
+.div_3  a span
+{
+  position: absolute;
+  
+}
 .div_4
 {
-  position: relative;
-
+ 
   display: inline-flex;
   flex-direction: column;
   align-items: center;
+  flex-basis: 25%;
+  margin-bottom: 20px;
   justify-content: space-evenly;
 }
 
@@ -756,27 +871,43 @@ section
 {
   width: 160px;
   height: 160px;
+  margin-top: 25px;
+  padding-bottom: 10px;
  background-color: #290001;
   place-items: center;
   border-radius: 50%;
 }
 .div_4 p
 {
- 
-  color: #F1A661;
+  color: #6f1d1b;
+  font-weight: 600;
   font-size: 15px;
+  text-align: center;
 }
 .div_4 h3
 {
   color: #290001;
-  margin: 10px;
+  margin-bottom: 15px;
 }
+.div_4 a
+{
+  color: #290001;
+  font-weight: bold;
+}
+.div_4  a span
+{
+  position: absolute;
+  
+}
+
+
 .div_5
 {
   display: inline-flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
+  flex-basis: 25%;
+  margin-bottom: 20px;
    justify-content: space-evenly;
 
 } 
@@ -799,6 +930,7 @@ section
   
    width: 150px;
    height: 150px;
+   margin-top: 25px;
    background-color: #290001;
    place-items: center;
    border-radius: 50%;
@@ -806,18 +938,28 @@ section
 
 .div_5 h3
 {
+  margin-bottom: 10px;
  color: #290001;
-
 } 
 
 .div_5 p
 {
- color: #F1A661;
- font-size: 15px;
-
-
+  color: #6f1d1b;
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
 } 
 
+.div_5 a
+{
+  color: #290001;
+  font-weight: bold;
+}
+.div_5  a span
+{
+  position: absolute;
+  
+}
 .div5
 {
   height:950px;

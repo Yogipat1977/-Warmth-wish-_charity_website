@@ -1,0 +1,246 @@
+ *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  } 
+  body
+  {
+  background-color: #FDEEDC;
+  }
+
+  .div-1
+  {
+    background-color: #F4E0B9;
+    display: flex;
+    justify-content: space-between;
+    height: 159px;
+    width: 100%;
+    padding: 1%;
+  }
+
+.btn-box
+{
+   inset-inline-end: 100%;
+   margin-right: 10%;
+}
+
+.btn
+{
+    float: inline-end;
+    border-radius: 5px;
+    height: 35px;
+    width: 120px;
+    font-size: 15;
+    font-weight: 550;
+    margin-top: 30px;
+    margin-right: 10px;
+    border-color:#290001;
+    cursor: pointer; 
+    border-radius: 20px;
+    background-color: transparent;
+    padding: auto;
+    color: #290001;
+    transition: background-color 0.3s ease-in;
+   
+}
+.btn span
+{
+    position: absolute;
+   padding-left:5px;
+  top: 52px;
+ 
+}
+.btn img
+{
+    position: absolute;
+    top: 52px;
+    height: 25px;
+    width: 25px;
+}
+ .btn:hover
+  {
+    background-color: #290001; /* Change background color on hover */
+    color: #DBCBBD;
+  }
+
+.Introduction_div
+{
+    position: relative;
+    top: 0;
+    height: 600px;
+    width: 100%;
+    background-color: #293040;
+    clip-path: polygon(0% 0%, 100.1% 0%, 100% 100%, 0% 69.3%);
+}
+.Introduction_div-Inner_div_1
+{
+    position: absolute;
+    height: 500px;
+    width: 40%;
+     right: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    flex-direction:column ;
+}
+.Introduction_div-Inner_div_1 h2
+{
+     
+    color: #FFE6A7;
+    font-size: 50px;
+    position: relative;
+   
+}
+.Introduction_div-Inner_div_1 h2::first-letter
+{
+    font-size: 150%;
+}
+.Introduction_div-Inner_div_1 p
+{
+    color: #FFE6A7;
+    display: inline-flex;
+    justify-content: center;
+    margin-right: 30px;
+    align-items: center;
+    flex-direction: column;
+}
+.Introduction_div-Inner_div_2
+{
+    position: absolute;
+    left: 0;
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin-left: 17% ;
+    background-color: #FFE6A7;
+    transform: translateY(10%);
+    border-radius: 68% 32% 66% 33% / 60% 52% 48% 39%;
+    
+}
+.Introduction_div-Inner_div_3
+{
+    position: absolute;
+    left: 0;
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin-left: 17% ;
+    transform: translateY(10%);
+    background-image: url(../About\ Us\ Img.jpg);
+    border-radius: 45% 55% 37% 63% / 45% 58% 42% 55%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.Missinon_statement-Div
+{
+    height: 500px; 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Missinon_statement-Div h2
+{
+    text-align:start;
+    font-size: 50px;
+    margin: 40px;
+    margin-left: 10%;
+}
+.Missinon_statement-Div h2::first-letter
+{
+    font-size: 150%;
+}
+.Missinon_statement-Inner-Div-1
+{
+  
+    position: relative;
+    height: 400px;
+    width: 38%;
+    bottom: 0;
+     left: 0;
+     margin-left: 15%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-basis: 50%;
+    flex-direction:column ;
+    
+}
+.Missinon_statement-Inner_div_2
+{
+    position: absolute;
+    right: 0;
+    display: flex;
+    height: 450px;
+    width: 450px;
+    margin-right: 10% ;
+    background-color: #290001;
+    border-radius: 65% 35% 65% 35% / 39% 28% 71% 61%;
+}.Missinon_statement-Inner_div_3
+{
+    position: absolute;
+    right: 0;
+    display: flex;
+    height: 450px;
+    width: 450px;
+    margin-right: 10% ;
+    background-image: url(../our\ mission\ img.jpg);
+    border-radius: 46% 54% 38% 62% / 33% 58% 42% 67%;
+    background-size: cover;
+}
+.what_we_do-div
+{
+    
+    height: 500px; 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.what_we_do-div h2
+{
+    text-align:end;
+    font-size: 50px;
+    margin: 40px;
+    margin-right: 10%;
+}
+.what_we_do-div h2::first-letter
+{
+    font-size: 150%;
+}
+.What_we_do-Inner-Div-1
+{
+    position: relative;
+    height: 400px;
+    width: 38%;
+    bottom: 0;
+    margin-left: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-basis: 50%;
+    flex-direction:column ;
+}
+.What_we_do-Inner-Div-2
+{
+    position: absolute;
+    left: 0;
+    display: flex;
+    height: 450px;
+    width: 450px;
+    margin-left: 10% ;
+    background-color: #290001;
+    border-radius: 65% 35% 65% 35% / 39% 28% 71% 61%;
+}.What_we_do-Inner-Div-3
+{
+    position: absolute;
+    left: 0;
+    display: flex;
+    height: 450px;
+    width: 450px;
+    margin-left: 10% ;
+    background-image: url(../what\ we\ do\ img.jpg);
+    border-radius: 46% 54% 38% 62% / 33% 58% 42% 67%;
+    background-size: cover;
+}

@@ -112,6 +112,7 @@
     height: 400px;
     width: 400px;
     margin-left: 17% ;
+    margin-top: 30px;
     background-color: #FFE6A7;
     transform: translateY(10%);
     border-radius: 68% 32% 66% 33% / 60% 52% 48% 39%;
@@ -125,6 +126,7 @@
     height: 400px;
     width: 400px;
     margin-left: 17% ;
+    margin-top: 30px;
     transform: translateY(10%);
     background-image: url(../About\ Us\ Img.jpg);
     border-radius: 45% 55% 37% 63% / 45% 58% 42% 55%;

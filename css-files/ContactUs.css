@@ -100,6 +100,7 @@
   margin-top: 50px;
   margin-left: 15%;
   color: #F4E0B9;
+  font-size: 17px;
 }
 
 
@@ -228,6 +229,11 @@
   margin-left: 13%;
   text-align: left;
 }
+.Team-info-div p a
+{
+  color: #293040;
+  font-weight:bold ;
+}
 
 .Feedback-div
 {
@@ -260,4 +266,9 @@
   margin-top: 5%;
   margin-left: 15%;
   text-align: left;
+}
+.Feedback-div p a
+{
+  color: #293040;
+  font-weight:bold ;
 }

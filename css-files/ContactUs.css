@@ -17,6 +17,21 @@
     width: 100%;
     padding: 1%;
   }
+  
+  .div-1 a
+  {
+    height: 130px;
+    width: 200px;
+  }
+
+
+   .div-1 img
+{
+    height: 130px;
+    width: 200px;
+    margin-bottom: 20px;
+     cursor: pointer;
+} 
 
 .btn-box
 {
@@ -62,10 +77,9 @@
     background-color: #290001; /* Change background color on hover */
     color: #DBCBBD;
   }
+  
 .Contact_Us-Introduction
 {
-    
- 
     height: 500px;
     width: 100%;
     display: flex;

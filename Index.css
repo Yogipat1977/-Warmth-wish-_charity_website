@@ -20,6 +20,18 @@ body
     padding-bottom: 3%;
     
 }
+ .div1 a
+{
+  /* position: absolute; */
+  height: 130px;
+  width: 130px;
+  margin-top: 10px;
+}
+.div1 img
+{
+  height: 100%;
+
+}
 .btn
 {
   
@@ -52,13 +64,7 @@ body
   }
 
 
-.div1 img
-{
-    margin-top: 13px;
-    height: 130px;
-    width: 200px;
-    margin-bottom: 10px;
-}
+     
 
   .div2 
   {
@@ -75,9 +81,10 @@ body
     backdrop-filter: blur(8px);
     z-index: 100;
    }
+
   .div2 button
   {
-      margin: 05px;  
+      margin: 5px;  
       padding: 10px 20px ;
       background-color: transparent;
       border: 0; 
@@ -88,7 +95,6 @@ body
       font-size: 16px;
       overflow: hidden;
       color:#290001;
-
   }
 
   .div2 button::before
@@ -147,8 +153,8 @@ body
   }
   .container
   {
-  height: 7vh;
-    margin-inline: 1.5rem;
+    height: 7vh;
+     margin-inline: 1.5px;  
     display: grid;
     place-items: center;
 
@@ -173,10 +179,10 @@ body
     border: none;
     outline: none;
     width: 85%;
-    border-radius: 4rem;
-    padding-left: 14px;
+    border-radius: 5px;
+    padding-left: 15px;
     font-family:"Poppins", sans-serif;
-    font-size: .895rem;
+    font-size: 15px;
     font-weight: 500;
     background-color: #DBCBBD;
     transition: opacity 1.5s;
@@ -201,10 +207,8 @@ body
   .search-icon, .search-close
   {
     color: #F4E0B9;
-    font-size: 1.2rem;
+    font-size: 18px;
     position: absolute;
-    
-
   }
   .search-close
   {
@@ -397,8 +401,7 @@ article a:hover::after
   margin: 0;
   height:140%;
   width: 100%;
- /* background-color: #DBCBBD; */
- /* background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(./4198004.jpg); */
+
  background-color:#293040 ;
   background-size: cover;
   display: flex;
@@ -534,7 +537,7 @@ article a:hover::after
    border-radius: 20px; 
    z-index: 1;
   cursor: pointer;
-  transition: color 300ms ease;
+  transition: color 300ms ease; 
 }
 .button-boxes a::before
 {
@@ -1094,22 +1097,25 @@ section
 }
 .volunteer_Events:hover 
 {
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(./volunteer\ img.jpg);
+  background: linear-gradient(rgba(255, 105, 5, 0.4), rgba(255,0,0,0.4)),url(./volunteer\ img.jpg);
   background-size: cover; 
   
   transform:scale(1.09);
-
+  .tinttt{
+    background-color: rgba(200, 50, 0, 0.5);
+    background-blend-mode: multiply;
+  }
 }
 .Awareness_Events:hover
 {
-  background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(./Recycle\ and\ Reuse\ img.jpg);
+  background:linear-gradient(rgba(255, 105, 5, 0.4), rgba(255,0,0,0.4)),url(./Recycle\ and\ Reuse\ img.jpg);
   background-size: cover; 
   transform:scale(1.09);
  
 }
 .Maintenance_and_Safety:hover
 {
-  background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(./Maintenance\ and\ Safety\ Workshops\ img.jpg);
+  background:linear-gradient(rgba(255, 105, 5, 0.4), rgba(255,0,0,0.4)),url(./Maintenance\ and\ Safety\ Workshops\ img.jpg);
   background-size: cover; 
   transform:scale(1.09);
 }
@@ -1862,4 +1868,7 @@ bottom: 0;
 width: 100%;
 color: #DBCBBD;
 }
-
+/* .tinttt{ background-color: rgba(250,50,0,0.5);
+  background-blend-mode: multiply;
+ 
+} */

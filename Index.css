@@ -153,11 +153,15 @@ body
   }
   .container
   {
-    height: 7vh;
-     margin-inline: 1.5px;  
-    display: grid;
+    height: 50px;
+    margin-inline: 2px;
+    display: flex;
     place-items: center;
-
+    width: 30%;
+    position: absolute;
+    margin-left: 13%;
+    left: 0;
+   
   }
   .search
   {
@@ -242,7 +246,7 @@ body
   
   position: relative;
   height: 700px;
-  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
   overflow: hidden;
 }
 
@@ -1868,7 +1872,3 @@ bottom: 0;
 width: 100%;
 color: #DBCBBD;
 }
-/* .tinttt{ background-color: rgba(250,50,0,0.5);
-  background-blend-mode: multiply;
- 
-} */

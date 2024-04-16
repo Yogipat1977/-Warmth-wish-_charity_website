@@ -19,13 +19,150 @@
 
     <style>
         
-        .donate-Form_left-div h1::after
+        .donate-Form_left-div h1::after,
+        .donate-Form_right-div h1::after
         {
             content:'»';
-            margin: 15px;
+            margin: 10px;
             position:relative;
 
         }
+
+        .input-name,.input-Email
+        {
+            height: 8%;
+            width: 90%;
+            margin: 35px  0 0 25px;
+            border: solid 2px #290001;
+            display: flex;
+            align-items: center;
+            border-radius: 50px;
+        }
+        .input-name input,.input-Email input
+        {
+            height: 20px;
+            margin-left: 10px;
+            outline: none;
+            width: 100%;
+            background-color: transparent;
+            border: none;
+            color: #290001;
+        }
+         .input-name label, .input-Email label
+        {
+            position: absolute;
+            margin-left: 25px;
+            font-weight: 500;
+            padding: 0 6px 0 6px;
+            transform: translateY(-135%);
+            background-color: #FDEEDC;
+        } 
+        .input-Contact
+        {
+            height: 8%;
+            width: 50%;
+            margin: 35px  0 0 10px;
+            border: solid 2px #290001;
+            display: flex;
+            align-items: center;
+            border-radius: 50px;
+        }
+
+        .input-Contact input
+        {
+            height: 20px;
+            margin-left: 10px;
+            outline: none;
+            width: 100%;
+            background-color: transparent;
+            border: none;
+            color: #290001;
+        }
+        .input-Contact label
+        {
+            position: absolute;
+            margin-left: 25px;
+            font-weight: 500;
+            padding: 0 6px 0 6px;
+            transform: translateY(-135%);
+            background-color: #FDEEDC;
+        }
+        .select-gender
+         {
+            position: relative; 
+            transform: translateY(-80px);
+            left: 53%;
+            height: 8%;
+            width: 40%;
+            margin: 35px  0 0 10px;
+            border: solid 2px #290001;
+            display: flex;
+            align-items: center;
+            border-radius: 50px;
+        }
+        .select-gender label
+        {
+            position: absolute;
+            margin-left: 25px;
+            font-weight: 500;
+            padding: 0 6px 0 6px;
+            transform: translateY(-135%);
+            background-color: #FDEEDC;
+        }
+        .select-gender select
+        {
+            height: 20px;
+            margin-left: 10px;
+            outline: none;
+            width: 90%;
+            background-color: transparent;
+            border: none;
+            color: #290001;
+        }
+
+        .Address
+        {
+            height: 8%;
+            width: 95%;
+            margin: 0 0 20px 10px;
+            border: solid 2px #290001;
+            transform: translateY(-60px);
+            display: flex;
+            align-items:start;
+            border-radius: 40px;
+        }
+
+        .Address label
+        {
+            position: absolute;
+            margin-left: 25px;
+            font-weight: 500;
+            padding: 0 6px 0 6px;
+            transform: translateY(-70%);
+            background-color: #FDEEDC;
+        }
+        .Address input
+        {
+            height: 20px;
+            margin-left: 20px;
+           margin-top: 10px;
+            outline: none;
+            width: 100%;
+            background-color: transparent;
+            border: none;
+            color: #290001;
+        }
+         .submit-class input
+         {
+            height: 50%;
+             width: 20%;
+             padding: 5px 5px;
+             background:#290001;
+             border: 2px solid #290001;
+             border-radius: 20px;
+              color: #FDEEDC;
+              cursor: pointer;
+         }
         </style>
     
       
@@ -75,14 +212,60 @@
 
         <div style=" background:#FDEEDC; height:90%; width: 80%;border-radius: 100px;display: inline-flex; flex-direction: row;">
 
-            <div class="donate-Form_left-div" style=" background-color: #290001; height: 900px; width: 50%;  border-radius: 100px 50px 50px 100px ; display: flex; justify-content: space-evenly; place-items: start;  flex-direction: column;">
+            <div class="donate-Form_left-div" style=" background-color: #290001; height: 900px; width: 50%;  border-radius: 100px 50px 50px 100px ; display: flex; justify-content:space-around; place-items: start;  flex-direction: column;">
 
-                 <h1  style="position: relative; color: #FDEEDC; font-size: 40px; text-align: center; margin: 2% 0 0 5%;"> let's Contribute<br>Together</h1>
+                 <h1  style="position: relative; color: #FDEEDC; font-size: 40px; text-align: center; margin: 2% 0 0 5%;">Book a Collection</h1>
+
                  <p style="position: relative; color: #FDEEDC; margin: 0 0 0 8%;" > Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>
                     Deleniti maiores illo quidem excepturi placeat. Distinctio modi quos culpa <br>  Deleniti maiores illo quidem excepturi placeat.</p>
+                    <form action="../index.html" style="height: 70% ; width: 90%; background-color:#FDEEDC; margin-left: 4%; border-radius: 50px;">
+
+                       <div class="input-name">
+                        <label for="input name"> First Name:-</label> 
+                        <input type="text" placeholder="Full Name">
+                       </div>
+                       
+                       <div class="input-Email">
+                        <label for="input Email"> E-mail Address:- </label>
+                        <input type="Email"  placeholder="abc@xyz.com">
+                       </div>
+                       <div class="input-Email">
+                        <label for="input Email">Conform E-mail:- </label>
+                        <input type="Email"  placeholder="abc@xyz.com">
+                       </div>
+                       <div class="input-Contact">
+                        <label for="input-Contact"> Contact No:-</label>
+                        <input type="text">
+                       </div>
+                       <div class="select-gender">
+                        <label for="input-Contact">Gender:-</label>
+                        <select name="Gender">
+                            <option value="Male" selected>Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Trans">Trans</option>
+                         </select>
+                       </div>
+                       <div class="Address">
+                        <label for="input-address"> Address:-</label>
+                        <input type="input" placeholder=" line 1">
+                       </div>
+                       <div class="Address">
+                        <input type="input" placeholder="line 2">
+                       </div>
+                       <p style="position:relative;  bottom: 10%; text-align:center;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Repudiandae alias voluptas praesentium esse. Iure laborum autem reiciendis.</p>
+
+                        <div class="submit-class" style=" display:flex; flex-direction:row; height: 10%; width: 100%; justify-content: space-evenly; align-items: center; transform: translateY(-50px);">
+                            <button style="height: 50%; width: 25%; background: transparent; border: 2px solid #290001; border-radius: 20px; padding: 3px; position: relative;  cursor: pointer;">Collection Date</button>
+                            <input type="submit" class="transparent" name="submit" value="Submit"> 
+                        </div>
+                     
+                    </form>
 
             </div>
-            <div class="donate-Form_right-div" style="background-color: #FDEEDC; position: relative; height: 900px; width: 50%; border-radius: 0 100px 100px 0; ">
+            <div class="donate-Form_right-div" style="background-color: #FDEEDC; position: relative; height: 900px; width: 50%; border-radius: 0 100px 100px 0;">
+
+                <h1  style="position: relative; color: #290001; font-size: 40px; text-align: center; margin: 5% 0 5% 10%; text-align: start;"> let's Contribute<br>Together</h1>
 
             </div>
 

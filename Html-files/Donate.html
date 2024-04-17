@@ -90,7 +90,7 @@
         .select-gender
          {
             position: relative; 
-            transform: translateY(-80px);
+            transform: translateY(-83px);
             left: 53%;
             height: 8%;
             width: 40%;
@@ -154,15 +154,89 @@
         }
          .submit-class input
          {
-            height: 50%;
+             height: 50%;
              width: 20%;
              padding: 5px 5px;
              background:#290001;
              border: 2px solid #290001;
              border-radius: 20px;
-              color: #FDEEDC;
-              cursor: pointer;
+             color: #FDEEDC;
+             cursor: pointer;
          }
+
+        .input-name-2
+        {
+            height: 8%;
+            width: 90%;
+            margin: 25px  0 0 25px;
+            border: solid 2px #FDEEDC;
+            display: flex;
+            align-items: center;
+            border-radius: 50px;
+        }
+        .input-name-2 label
+        {
+            
+            position: absolute;
+            margin-left: 25px;
+            font-weight: 500;
+            padding: 0 6px 0 6px;
+            transform: translateY(-135%);
+            background-color: #290001;
+             color: #FDEEDC;
+        }
+        .input-name-2 input
+        {
+            height: 20px;
+            margin-left: 10px;
+            outline: none;
+            width: 100%;
+            background-color: transparent;
+            border: none;
+            color: #290001;
+        }
+        .input-name-2 input[type="text"]::placeholder
+         {
+            color: #FDEEDC; /* Change placeholder text color */
+         }
+
+            .input-name-2 input[type="text"] 
+            {
+            color: #FDEEDC; /* Change input text color */
+            }
+           .select-charity-items
+           {
+            height: 8%;
+            width: 40%;
+            margin: 35px  0 0 10px;
+            border: solid 2px #FDEEDC;
+            display: flex;
+            align-items: center;
+            border-radius: 50px;
+            }
+            .select-charity-items label
+            {
+            position: absolute;
+            margin-left: 25px;
+            font-weight: 500;
+            padding: 0 6px 0 6px;
+            transform: translateY(-135%);
+            background-color: #290001;
+             color: #FDEEDC; 
+            }
+
+            .select-charity-items select
+            {   
+            height: 20px;
+            margin-left: 10px;
+            outline: none;
+            width: 90%;
+            background-color: transparent;
+            border: none;
+            }
+        
+         
+
         </style>
     
       
@@ -192,7 +266,7 @@
         <a href="../Html-files/OurAssortments.html"> <button >Our Assortments</button></a> 
         <a href="../Html-files/Events.html"> <button>Events</button></a> 
         <a href="../Html-files/OurServices.html"><button> Our Services</button></a> 
-        <a href="../Index.html"><button>Home</button></a>
+        <a href="../index.html"><button>Home</button></a>
 
                <div class="container">
                    <form action="https://www.google.com/search" class="search" id="search-bar">
@@ -216,7 +290,8 @@
 
                  <h1  style="position: relative; color: #FDEEDC; font-size: 40px; text-align: center; margin: 2% 0 0 5%;">Book a Collection</h1>
 
-                 <p style="position: relative; color: #FDEEDC; margin: 0 0 0 8%; text-align: center ; word-spacing: 2px; font-size: 18px;" >reserve a collection for a donation.  We promise to respond to you right away and  <br>provide you with our best assistance in having your belongings collected. 
+                 <p style="position: relative; color: #FDEEDC; margin: 0 10% 0 5%; text-align: center ; word-spacing: 1px; font-size: 18px; padding: 20px;" >
+                    Reserve a collection for a donation.  We promise to respond to you right away and provide you with our best assistance in having your belongings collected. 
                      </p>
                     <form action="../index.html" style="height: 70% ; width: 90%; background-color:#FDEEDC; margin-left: 4%; border-radius: 50px;">
 
@@ -252,16 +327,19 @@
                        <div class="Address">
                         <input type="input" placeholder="line 2">
                        </div>
-                       <p style="position:relative;  bottom: 10%; text-align:center; word-spacing: 1px; font-size: 17px;">Select the time that works best for you, and we'll set up collecting  services to make  <br>sure everything is convenient for you along the way. </p>
+                       <p style="position:relative; bottom: 10%; text-align:center; word-spacing: 0.5px; font-size: 17px; padding: 0 5%;">
+                        Select the time that works best for you, and we'll set up collecting  services to make sure everything is convenient for you along the way. </p>
 
                         <div class="submit-class" style=" display:flex; flex-direction:row; height: 10%; width: 100%; justify-content: space-evenly; align-items: center; transform: translateY(-50px);">
-                            <button style="height: 50%; width: 25%; background: transparent; border: 2px solid #290001; border-radius: 20px; padding: 3px; position: relative;  cursor: pointer;"> <img src="../calendar.png " alt=" calendar img" style=" position: absolute; height: 15px; width: 15px; transform: translateX(-30px);" >Collection Date</button>
+                            <button style="height: 50%; width: 25%; background: transparent; border: 2px solid #290001; border-radius: 20px; padding: 3px; position: relative;  cursor: pointer;"> <img src="../calendar.png " alt=" calendar img" style=" position: relative; height: 14px; width: 14px; padding: 2px 3px 0 0;" >Collection Date</button>
                             <input type="submit" class="transparent" name="submit" value="Submit"> 
                         </div>
                      
                     </form>
 
             </div>
+
+
             <div class="donate-Form_right-div" style="background-color: #FDEEDC; position: relative; height: 900px; width: 50%; border-radius: 0 100px 100px 0; display: flex; justify-content: space-around; align-items: start;flex-direction: column;">
 
                 <h1  style="position: relative; color: #290001; font-size: 40px; text-align: center; margin: 5% 0 5% 10%; text-align: start;"> let's Contribute<br>Together</h1>
@@ -270,34 +348,120 @@
                     Want to donate ?
                 </h3>
                 
-                <form action="../index.html" style="height: 65% ; width: 90%; background-color:#290001; margin-left: 6%; border-radius: 100px;">
-                <h3 style="color: #FDEEDC; font-size: 25px; margin: 10px 0  0 10px;">Provide your information:-</h3>
+                <form action="../index.html" style="height: 65% ; width: 90%; background-color:#290001; margin-left: 6%; border-radius: 100px; display: flex; flex-direction: column; align-items: center;">
+                <h3 style="color: #FDEEDC; font-size: 25px; margin: 20px 0px  0 0px;">Provide your information:-</h3>
+                <p style="color: #FDEEDC;  margin: 25px 20px 10px 55px; word-spacing: 2px;  font-size: 18px;">
+                    Use the selector to select your favorite selection from various charitable options, such as clothing, electronics, furniture, and household necessities.
+                </p>
+
+
+                <div class="input-name-2">
+                    <label for="input name-2">  Name:-</label> 
+                    <input type="text" placeholder="Full Name">
+                   </div>
+                   
+                   <div class="select-charity-items" style="margin-right: 47.5%;">
+                    <label for="select-charity-items">Charity Items:-</label>
+                    <select name="charity-items" style=" color: #FDEEDC;background-color: transparent;">
+                        <option value="electronics" selected  style="background-color: gray; border: none;">Electronics</option>
+                        <option value="Furniture"style="background-color: black;">Furniture</option>
+                        <option value="clothes"style="background-color: black;">clothes</option>
+                        <option value="other Essentials"style="background-color: black;">other Essentials</option>
+                     </select>
+                   </div>
+
+                   
+                   <p style="color: #FDEEDC; margin: 40px 0 20px 0; text-align: start; padding: 0px 10px 10px 5px;font-size:18px;">
+                    Please respond to us with the specific item you plan to donate.<br>we provide you space below to  write.</p>
+
+
+                    
+                <div class="input-name-2">
+                    <label for="input name-2"> Charity Items:-</label> 
+                    <input type="text" placeholder="other items ">
+                   </div>
+    
+
+
+                   <button style=" height: 40px; width: 100px; padding: 10px 10px 10px 10px; background: transparent; color: #FDEEDC; border: 2px solid #FDEEDC; border-radius: 20px; margin-top: 20px; cursor: pointer;"> Donate </button>
                 </form>
-
             </div>
-       
-
+    
             </div>
-
         </div>
-
-
-
-
     </div>
+    <footer>
 
+        <div class="Row">
+        
+            <div class="col">
+                <img src="../Footer logo img.png"  class="footer-logo">
 
+                <h3> Address:</h3>
 
+                 <p>731- A Romford Road,</p>
+                 <p>Manor park,</p>
+                 <p>London. </p>
+                 <p> Postcode :- E12 5AW</p>
+               
+            </div>
 
+            <div class="col col-2">  
 
+                <h3> Useful Links:</h3>
+                <ul>
+                    <li><a href=""> About us </a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href=""> Our Services </a></li>
+                    <li><a href=""> Shop </a></li>
+                    <li><a href="">Events</a></li>
+                </ul>
 
+            </div>
+            <div class="col  col-3">
+                <h3>Be part of our  mission:</h3>
+                <ul>
+                    <li><a href=""> Join Us</a></li>
+                    <li><a href=""> Volunteer</a></li>
+                    <li><a href=""> Donate </a></li>
+                    <li><a href=""> Jobs</a></li>
+                    <li><a href=""> Sign In / Register</a></li>
+                </ul>
+            </div>
+            <div class="col col-4">
 
+                <h3>Policies:</h3>
 
+                <ul>
+                    <li><a href="">Privacy</a></li>
+                    <li><a href=""> Tearms & Conditions</a></li>
+                    <li><a href=""> Cookies </a></li>
+                    <li><a href="">Accessibility</a></li>
+                    <li><a href="">All policies</a></li>
+                </ul>
+            </div>
+            <hr>
+            <div class="col col-5">
+                <img src="../Footer Bg img.png" alt=" footer img">
+            </div>
+        </div>
+       
+         <div class="copyright_And_Follow-us">
 
-
-
-
-
+            <p>Copyright © 2024 Warmth Wish. All rights reserved.</p>
+            <ul> 
+                <li> Follow Us</li>
+                <li><a href=""><img src="../facebook.png" alt=" facebook"></a></li>
+                <Li><a href=""><img src="../twitter.png" alt="twitter"></a></Li>
+                <Li><a href=""><img src="../linkedin.png" alt="linkedin"></a></Li>
+                <Li><a href=""><img src="../instagram.png" alt=" instagram"></a> </Li>
+                <Li><a href=""><img src="../whatsapp.png" alt=" whatsapp"></a></Li>
+            </ul>
+           
+         </div> 
+         <hr class="hr-2">
+    </footer>
+         
 
    <script src="../main.js"></script>
 

@@ -1,42 +1,57 @@
-body
+body  /* Styling for the body element */
 {
-   background-color:Hsl(222, 100%, 99%);
-   overflow-x: hidden;
-   
-}
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+  
+  background-color: HSL(222, 100%, 99%); /* Background color */
+  overflow-x: hidden; /* Hide horizontal overflow */
 }
 
-.div1
-{
-    background-color: #F4E0B9;
-    display: flex;
-    justify-content: space-around;
-    height: 159px;
-    width: 100%;
-    padding-bottom: 3%;
-    
+* {
+  /* Applying styles to all elements */
+  box-sizing: border-box;/* Including padding and border in element's total width and height */
+  padding: 0;  /* Setting padding to 0 */
+  margin: 0;/* Setting margin to 0 */
 }
- .div1 a
-{
+
+.div1 
+ {
+  /* Styling for div1 element */
+  background-color: #F4E0B9;
+
+  display: flex;
+
+  justify-content: space-around;
  
-  height: 130px;
-  width: 130px;
-  margin-top: 10px;
+  height: 159px;
+
+  width: 100%;
+
+  padding-bottom: 3%;
+
 }
-.div1 img
-{
+
+.div1 a {
+  
+  height: 130px;
+
+  width: 130px;
+ 
+  margin-top: 10px;
+
+}
+
+.div1 img {
+
   height: 100%;
 
 }
+
 .btn
-{
-  
-   inset-inline-end: 100%;
+ {
+ 
+  inset-inline-end: 100%;
+
 }
+
 
 .btn button
 {

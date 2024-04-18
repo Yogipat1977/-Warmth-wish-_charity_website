@@ -93,11 +93,7 @@ window.addEventListener('scroll', function()
 
 			function ClickMessage()
 			{
- 			alert("You have successfully created on click event!");
+ 			alert("You have successfully submitted your");
 		 	}
 
 
-
-
-
-   

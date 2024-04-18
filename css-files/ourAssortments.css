@@ -77,3 +77,167 @@
     background-color: #290001; /* Change background color on hover */
     color: #DBCBBD;
   }
+
+  .ourAssortments-intro_div
+  {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 450px;
+    background-color:#293040 ;
+    clip-path: polygon(0% 0%, 100.1% 0%, 100% 100%, 0% 85.5%);
+  }
+
+ .ourAssortments-intro_div h1
+  {
+ 
+    color: #F4E0B9;
+    font-size: 50px;
+
+}
+
+.ourAssortments-intro_div h1 span
+{
+     color:#99582A;
+}
+.ourAssortments-intro_div p
+{
+ 
+    color: #FDEEDC;
+    font-size: 19px;
+    height: 10%;
+    width: 50%;
+    padding: 0 0 0 10%;
+
+}
+.ourAssortments-intro_div img
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 370px;
+  width: 400px;
+  margin: 2% 10% 0 0;
+   border-radius: 60% 40% 48% 52% / 33% 44% 56% 67%;
+}
+
+.our_assortments-main-div-1, .our_assortments-main-div-2
+{
+
+display: flex;
+justify-content: space-evenly;
+flex-direction: column;
+ align-items: center;
+  height: 500px;
+   width: 100%;
+}
+.our_assortments-main-div-2
+{
+  display: flex;
+justify-content: space-evenly;
+flex-direction: column;
+ align-items: center;
+  height: 700px;
+   width: 100%;
+}
+.our_assortments-main-div-1 .p_heading
+{
+  margin-top: 6%;
+  font-size: 45px;
+  text-align: center;
+}
+.our_assortments-main-div-1 #p_topic
+{
+   font-size: 20px;
+   height: 20%;
+   width: 60%;
+   margin-top: 3%;
+   text-align: center;
+}
+
+
+.our-assortments-img-div
+{
+  height:300px ;
+ width: 100%;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: space-evenly;
+
+}
+
+.block_1, .block_2, .block_3
+{
+  height: 200px;
+  width: 200px;
+  display: flex;
+  align-items: center; 
+  flex-direction: column;
+  justify-content:flex-start;
+  color: #290001;
+  z-index: 1;
+
+  
+}
+.block_1 h5, .block_2 h5, .block_3 h5
+{
+  padding: 10px;
+  font-size: 17px;
+  color: #290001;
+  z-index: 1000;
+}
+.block_1 img, .block_2 img, .block_3 img
+{
+  position: absolute;
+  background-color:#E8985E;
+  border-radius: 50%;
+ height: 200px;
+ width: 200px;
+
+}
+
+
+.horizontal-line 
+{
+  position: absolute;
+  width: 100%;
+  border-top: 2px solid #290001; /* Change color as needed */
+
+}
+
+
+.our_assortments-main-div-2 .p_heading
+{
+  margin-top: 2%;
+  font-size: 45px;
+  width: 80%;
+  text-align: center;
+}
+.our_assortments-main-div-2 div
+{
+  display: flex;
+  width: 70%;
+}
+
+.our_assortments-main-div-2 #p_topic-1
+{
+   font-size: 20px;
+   height: 20%;
+   width: 50%;
+    margin-right: 0%; 
+ 
+   
+}
+
+
+.our_assortments-main-div-2 #p_topic-2
+{
+  position: absolute;
+  right: 0;
+   font-size: 20px;
+   height: 20%;
+   width: 40%;
+   margin-right: 5%;
+  
+}

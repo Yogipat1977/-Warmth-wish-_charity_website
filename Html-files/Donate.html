@@ -3,282 +3,293 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donate form</title>
-    <link rel="stylesheet" href="../Index.css">
-    <link rel="stylesheet" href="../css-files/Donate.css">
-   <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
-   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>  donate</title>
+<!-- main css link  -->
+<link rel="stylesheet" href="../Index.css">
+<!-- donate css link  -->
+<link rel="stylesheet" href="/css-files/Donate.css">
+<!-- link for google fonts  -->
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"> <!-- link for icons -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />    <!-- link for google fonts  -->
+<!-- link for the libarary that i have used for the simple animations at  some places  -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> 
+
+
+
+   <style>
+        
+    .donate-Form_left-div h1::after,
+    .donate-Form_right-div h1::after
+    {
+        content:'»';
+        margin: 10px;
+        position:relative;
+
+    }
+
+    .input-name,.input-Email
+    {
+        height: 8%;
+        width: 90%;
+        margin: 35px  0 0 25px;
+        border: solid 2px #290001;
+        display: flex;
+        align-items: center;
+        border-radius: 50px;
+    }
+    .input-name input,.input-Email input
+    {
+        height: 20px;
+        margin-left: 10px;
+        outline: none;
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        color: #290001;
+    }
+     .input-name label, .input-Email label
+    {
+        position: absolute;
+        margin-left: 25px;
+        font-weight: 500;
+        padding: 0 6px 0 6px;
+        transform: translateY(-135%);
+        background-color: #FDEEDC;
+    } 
+    .input-Contact
+    {
+        height: 8%;
+        width: 50%;
+        margin: 35px  0 0 10px;
+        border: solid 2px #290001;
+        display: flex;
+        align-items: center;
+        border-radius: 50px;
+    }
+
+    .input-Contact input
+    {
+        height: 20px;
+        margin-left: 10px;
+        outline: none;
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        color: #FDEEDC;
+    }
+    .input-Contact label
+    {
+        position: absolute;
+        margin-left: 25px;
+        font-weight: 500;
+        padding: 0 6px 0 6px;
+        transform: translateY(-135%);
+        background-color: #FDEEDC;
+    }
+    .select-gender
+     {
+        position: relative; 
+        transform: translateY(-83px);
+        left: 53%;
+        height: 8%;
+        width: 40%;
+        margin: 35px  0 0 10px;
+        border: solid 2px #290001;
+        display: flex;
+        align-items: center;
+        border-radius: 50px;
+    }
+    .select-gender label
+    {
+        position: absolute;
+        margin-left: 25px;
+        font-weight: 500;
+        padding: 0 6px 0 6px;
+        transform: translateY(-135%);
+        background-color: #FDEEDC;
+    }
+    .select-gender select
+    {
+        height: 20px;
+        margin-left: 10px;
+        outline: none;
+        width: 90%;
+        background-color: transparent;
+        border: none;
+        color: #290001;
+    }
+
+    .Address
+    {
+        height: 8%;
+        width: 95%;
+        margin: 0 0 20px 10px;
+        border: solid 2px #290001;
+        transform: translateY(-60px);
+        display: flex;
+        align-items:start;
+        border-radius: 40px;
+    }
+
+    .Address label
+    {
+        position: absolute;
+        margin-left: 25px;
+        font-weight: 500;
+        padding: 0 6px 0 6px;
+        transform: translateY(-70%);
+        background-color: #FDEEDC;
+    }
+    .Address input
+    {
+        height: 20px;
+        margin-left: 20px;
+       margin-top: 10px;
+        outline: none;
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        color: #290001;
+    }
+     .submit-class input
+     {
+         height: 50%;
+         width: 20%;
+         padding: 5px 5px;
+         background:#290001;
+         border: 2px solid #290001;
+         border-radius: 20px;
+         color: #FDEEDC;
+         cursor: pointer;
+     }
+
+    .input-name-2
+    {
+        height: 8%;
+        width: 90%;
+        margin: 25px  0 0 25px;
+        border: solid 2px #FDEEDC;
+        display: flex;
+        align-items: center;
+        border-radius: 50px;
+    }
+    .input-name-2 label
+    {
+        
+        position: absolute;
+        margin-left: 25px;
+        font-weight: 500;
+        padding: 0 6px 0 6px;
+        transform: translateY(-135%);
+        background-color: #290001;
+         color: #FDEEDC;
+    }
+    .input-name-2 input
+    {
+        height: 20px;
+        margin-left: 10px;
+        outline: none;
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        color: #290001;
+    }
+    .input-name-2 input[type="text"]::placeholder
+     {
+        color: #FDEEDC; /* Change placeholder text color */
+     }
+
+        .input-name-2 input[type="text"] 
+        {
+        color: #FDEEDC; /* Change input text color */
+        }
+       .select-charity-items
+       {
+        height: 8%;
+        width: 40%;
+        margin: 35px  0 0 10px;
+        border: solid 2px #FDEEDC;
+        display: flex;
+        align-items: center;
+        border-radius: 50px;
+        }
+        .select-charity-items label
+        {
+        position: absolute;
+        margin-left: 25px;
+        font-weight: 500;
+        padding: 0 6px 0 6px;
+        transform: translateY(-135%);
+        background-color: #290001;
+         color: #FDEEDC; 
+        }
+
+        .select-charity-items select
+        {   
+        height: 20px;
+        margin-left: 10px;
+        outline: none;
+        width: 90%;
+        background-color: transparent;
+        border: none;
+        }
+    
+     
+
+    </style>
+
 </head>
 
 
-<body>
-
-
-
-    <style>
-        
-        .donate-Form_left-div h1::after,
-        .donate-Form_right-div h1::after
-        {
-            content:'»';
-            margin: 10px;
-            position:relative;
-
-        }
-
-        .input-name,.input-Email
-        {
-            height: 8%;
-            width: 90%;
-            margin: 35px  0 0 25px;
-            border: solid 2px #290001;
-            display: flex;
-            align-items: center;
-            border-radius: 50px;
-        }
-        .input-name input,.input-Email input
-        {
-            height: 20px;
-            margin-left: 10px;
-            outline: none;
-            width: 100%;
-            background-color: transparent;
-            border: none;
-            color: #290001;
-        }
-         .input-name label, .input-Email label
-        {
-            position: absolute;
-            margin-left: 25px;
-            font-weight: 500;
-            padding: 0 6px 0 6px;
-            transform: translateY(-135%);
-            background-color: #FDEEDC;
-        } 
-        .input-Contact
-        {
-            height: 8%;
-            width: 50%;
-            margin: 35px  0 0 10px;
-            border: solid 2px #290001;
-            display: flex;
-            align-items: center;
-            border-radius: 50px;
-        }
-
-        .input-Contact input
-        {
-            height: 20px;
-            margin-left: 10px;
-            outline: none;
-            width: 100%;
-            background-color: transparent;
-            border: none;
-            color: #290001;
-        }
-        .input-Contact label
-        {
-            position: absolute;
-            margin-left: 25px;
-            font-weight: 500;
-            padding: 0 6px 0 6px;
-            transform: translateY(-135%);
-            background-color: #FDEEDC;
-        }
-        .select-gender
-         {
-            position: relative; 
-            transform: translateY(-83px);
-            left: 53%;
-            height: 8%;
-            width: 40%;
-            margin: 35px  0 0 10px;
-            border: solid 2px #290001;
-            display: flex;
-            align-items: center;
-            border-radius: 50px;
-        }
-        .select-gender label
-        {
-            position: absolute;
-            margin-left: 25px;
-            font-weight: 500;
-            padding: 0 6px 0 6px;
-            transform: translateY(-135%);
-            background-color: #FDEEDC;
-        }
-        .select-gender select
-        {
-            height: 20px;
-            margin-left: 10px;
-            outline: none;
-            width: 90%;
-            background-color: transparent;
-            border: none;
-            color: #290001;
-        }
-
-        .Address
-        {
-            height: 8%;
-            width: 95%;
-            margin: 0 0 20px 10px;
-            border: solid 2px #290001;
-            transform: translateY(-60px);
-            display: flex;
-            align-items:start;
-            border-radius: 40px;
-        }
-
-        .Address label
-        {
-            position: absolute;
-            margin-left: 25px;
-            font-weight: 500;
-            padding: 0 6px 0 6px;
-            transform: translateY(-70%);
-            background-color: #FDEEDC;
-        }
-        .Address input
-        {
-            height: 20px;
-            margin-left: 20px;
-           margin-top: 10px;
-            outline: none;
-            width: 100%;
-            background-color: transparent;
-            border: none;
-            color: #290001;
-        }
-         .submit-class input
-         {
-             height: 50%;
-             width: 20%;
-             padding: 5px 5px;
-             background:#290001;
-             border: 2px solid #290001;
-             border-radius: 20px;
-             color: #FDEEDC;
-             cursor: pointer;
-         }
-
-        .input-name-2
-        {
-            height: 8%;
-            width: 90%;
-            margin: 25px  0 0 25px;
-            border: solid 2px #FDEEDC;
-            display: flex;
-            align-items: center;
-            border-radius: 50px;
-        }
-        .input-name-2 label
-        {
-            
-            position: absolute;
-            margin-left: 25px;
-            font-weight: 500;
-            padding: 0 6px 0 6px;
-            transform: translateY(-135%);
-            background-color: #290001;
-             color: #FDEEDC;
-        }
-        .input-name-2 input
-        {
-            height: 20px;
-            margin-left: 10px;
-            outline: none;
-            width: 100%;
-            background-color: transparent;
-            border: none;
-            color: #290001;
-        }
-        .input-name-2 input[type="text"]::placeholder
-         {
-            color: #FDEEDC; /* Change placeholder text color */
-         }
-
-            .input-name-2 input[type="text"] 
-            {
-            color: #FDEEDC; /* Change input text color */
-            }
-           .select-charity-items
-           {
-            height: 8%;
-            width: 40%;
-            margin: 35px  0 0 10px;
-            border: solid 2px #FDEEDC;
-            display: flex;
-            align-items: center;
-            border-radius: 50px;
-            }
-            .select-charity-items label
-            {
-            position: absolute;
-            margin-left: 25px;
-            font-weight: 500;
-            padding: 0 6px 0 6px;
-            transform: translateY(-135%);
-            background-color: #290001;
-             color: #FDEEDC; 
-            }
-
-            .select-charity-items select
-            {   
-            height: 20px;
-            margin-left: 10px;
-            outline: none;
-            width: 90%;
-            background-color: transparent;
-            border: none;
-            }
-        
-         
-
-        </style>
-    
+<body> 
       
-    <div class="div-1"> 
+    <!-- header start  -->
+    <div class="div-1">   
+        <!-- header logo link  -->
         <a href="../Index.html"> <img src="../warmth-wish-high-resolution-logo-transparent.png" alt=" my website logo"></a>
-       
-         <div class="btn-box">
+          <!-- div for the buttons -->
+          <div class="btn">
             
-            <button class="btn"> Sign In
-                <img src="../log in img.png" alt=" sign in">
-
-            </button>
-            <button class="btn">Log In   
-                <span class="material-symbols-outlined">
-                login
-                </span>
-            </button>  
+            <a href="./login.html"> log In</a>
+            <a href="./login.html"> Sign In</a>
+     </div>  
+             <!-- button end here  -->
      </div>
-
+ <!-- button div ends  -->
               
     </div>
-
+     <!-- header ends  -->
+ <!-- nav bar starts  here  -->
     <div class="div2" id="navbar">
-        
+          <!-- all links for the nav bar that connect my  other pages  -->
         <a href="../Html-files/AboutUs.html"> <button >About Us</button></a> 
         <a href="../Html-files/ContactUs.html"><button>Contact us</button> </a>
         <a href="../Html-files/OurAssortments.html"> <button >Our Assortments</button></a> 
         <a href="../Html-files/Events.html"> <button>Events</button></a> 
         <a href="../Html-files/OurServices.html"><button> Our Services</button></a> 
-        <a href="../index.html"><button>Home</button></a>
+       <a href="../Html-files/donate.html"><button class="donateBtn">Donate Us</button></a>
+       <a href="../index.html"><button>Home</button></a>
+<!-- all links ends  -->
 
-               <div class="container">
-                   <form action="https://www.google.com/search" class="search" id="search-bar">
+       <!-- my search  bar starts from  here -->
+               <div class="container">    
+                 <!-- form create for search bar   and give  id and class both for the js animation  -->
+                   <form action="https://www.google.com/search" class="search" id="search-bar"> 
+                     <!-- give imput here  -->
                        <input type="Search" placeholder="Search Here..." class="Search-input"> 
-                           <div class=" Search-Button" id="Search-btn">
+                       <!-- search and close icons for search bar  with id and class both  -->
+                           <div class=" Search-Button" id="Search-btn"> 
                                <i class="ri-search-2-line search-icon"></i>
                                <i class="ri-close-line search-close"></i>
                            </div> 
                    </form>
+                    <!-- form close  -->
                 </div>
+                <!-- div close  -->
    </div>
 
+<!-- header end  -->
 
 
 
@@ -293,24 +304,28 @@
                  <p style="position: relative; color: #FDEEDC; margin: 0 10% 0 5%; text-align: center ; word-spacing: 1px; font-size: 18px; padding: 20px;" >
                     Reserve a collection for a donation.  We promise to respond to you right away and provide you with our best assistance in having your belongings collected. 
                      </p>
-                    <form  style="height: 70% ; width: 90%; background-color:#FDEEDC; margin-left: 4%; border-radius: 50px;" onSubmit="ClickMessage()">
+                    <form   id="form" style="height: 70% ; width: 90%; background-color:#FDEEDC; margin-left: 4%; border-radius: 50px;" >
 
                        <div class="input-name">
                         <label for="input name"> First Name:-</label> 
                         <input type="text"  placeholder="Full Name" id="name" >
+             
                        </div>
                        
                        <div class="input-Email">
                         <label for="email"> E-mail Address:- </label>
                         <input  type="email" name="EmailInput" placeholder="abc@xyz.com">
+                       
                        </div>
                        <div class="input-Email">
                         <label for="email">Conform E-mail:- </label>
                         <input name="EmailInput" placeholder="abc@xyz.com">
+                        
                        </div>
                        <div class="input-Contact">
                         <label for="input-Contact"> Contact No:-</label>
                         <input type="text">
+                      
                        </div>
                        <div class="select-gender">
                         <label for="input-Contact">Gender:-</label>
@@ -331,7 +346,7 @@
                         Select the time that works best for you, and we'll set up collecting  services to make sure everything is convenient for you along the way. </p>
 
                         <div class="submit-class" style=" display:flex; flex-direction:row; height: 10%; width: 100%; justify-content: space-evenly; align-items: center; transform: translateY(-50px);">
-                            <button style="height: 50%; width: 25%; background: transparent; border: 2px solid #290001; border-radius: 20px; padding: 3px; position: relative;  cursor: pointer;"> <img src="../calendar.png " alt=" calendar img" style=" position: relative; height: 14px; width: 14px; padding: 2px 3px 0 0;" >Collection Date</button>
+                             <input type="date" style=" background-color: #FDEEDC; color: #290001; ">
                             <input type="submit" class="transparent" name="submit" value="Submit"> 
                         </div>
                      
@@ -358,6 +373,7 @@
                 <div class="input-name-2">
                     <label for="input name-2">  Name:-</label> 
                     <input type="text" placeholder="Full Name">
+                    <p class="name massage">Please enter a valid Email.</p>
                    </div>
                    
                    <div class="select-charity-items" style="margin-right: 47.5%;">
@@ -390,85 +406,112 @@
             </div>
         </div>
     </div>
-    <footer>
 
-        <div class="Row">
-        
-            <div class="col">
-                <img src="../Footer logo img.png"  class="footer-logo">
+  
 
-                <h3> Address:</h3>
-
-                 <p>731- A Romford Road,</p>
-                 <p>Manor park,</p>
-                 <p>London. </p>
-                 <p> Postcode :- E12 5AW</p>
-               
-            </div>
-
-            <div class="col col-2">  
-
-                <h3> Useful Links:</h3>
-                <ul>
-                    <li><a href="/Html-files/AboutUs.html"> About us </a></li>
-                    <li><a href="/Html-files/ContactUs.html">Contact Us</a></li>
-                    <li><a href="/Html-files/OurServices.html"> Our Services </a></li>
-                    <li><a href="./Html-files/OurAssortments.html"> Shop </a></li>
-                    <li><a href="Html-files/Events.html">Events</a></li>
-                </ul>
-
-            </div>
-            <div class="col  col-3">
-                <h3>Be part of our  mission:</h3>
-                <ul>
-                    <li><a href=""> Join Us</a></li>
-                    <li><a href=""> Volunteer</a></li>
-                    <li><a href="/Html-files/donate.html"> Donate </a></li>
-                    <li><a href=""> Jobs</a></li>
-                    <li><a href=""> Sign In / Register</a></li>
-                </ul>
-            </div>
-            <div class="col col-4">
-
-                <h3>Policies:</h3>
-
-                <ul>
-                    <li><a href="">Privacy</a></li>
-                    <li><a href=""> Tearms & Conditions</a></li>
-                    <li><a href=""> Cookies </a></li>
-                    <li><a href="">Accessibility</a></li>
-                    <li><a href="">All policies</a></li>
-                </ul>
-            </div>
-            <hr>
-            <div class="col col-5">
-                <img src="../Footer Bg img.png" alt=" footer img">
-            </div>
-        </div>
-       
-         <div class="copyright_And_Follow-us">
-
-            <p>Copyright © 2024 Warmth Wish. All rights reserved.</p>
-            <ul> 
-                <li> Follow Us</li>
-                <li><a href="https://en-gb.facebook.com/"><img src="/facebook.png" alt=" facebook"></a></li>
-                <Li><a href="https://twitter.com/?lang=en"><img src="/twitter.png" alt="twitter"></a></Li>
-                <Li><a href="https://uk.linkedin.com/"><img src="/linkedin.png" alt="linkedin"></a></Li>
-                <Li><a href="https://www.instagram.com/"><img src="/instagram.png" alt=" instagram"></a> </Li>
-                <Li><a href="https://www.whatsapp.com/"><img src="/whatsapp.png" alt=" whatsapp"></a></Li>
+ <!-- footer starts here  -->
+ <footer>
+    <!-- div row for  all col in it   -->
+       <div class="Row"> 
+        <!-- column for logo and address  -->
+           <div class="col"> 
+               <img src="../Footer logo img.png"  class="footer-logo">
+    <!-- address  -->
+               <h3> Address:</h3>
+   
+                <p>731- A Romford Road,</p>
+                <p>Manor park,</p>
+                <p>London. </p>
+                <p> Postcode :- E12 5AW</p>
+              
+           </div>
+            <!-- col 1 close  -->
+    
+            <!-- col 2 starts here  -->
+           <div class="col col-2">  
+    <!-- heading  -->
+               <h3> Useful Links:</h3>
+                <!-- links  that i have in navbar  -->
+               <ul>
+                   <li><a href="/Html-files/AboutUs.html"> About us </a></li>
+                   <li><a href="/Html-files/ContactUs.html">Contact Us</a></li>
+                   <li><a href="/Html-files/OurServices.html"> Our Services </a></li>
+                   <li><a href="./Html-files/OurAssortments.html"> Shop </a></li>
+                   <li><a href="Events.html">Events</a></li>
+               </ul>
+   
+           </div> 
+           <!-- dive close for col 2 -->
+           <!-- col 3 starts  -->
+           <div class="col  col-3">
+                <!-- heading  -->
+               <h3>Be part of our  mission:</h3>
+                <!-- link for to connect with us  -->
+               <ul>
+                   
+                <li><a href="./login.html"> Join Us</a></li>
+                <li><a href=""> Volunteer</a></li>
+                <li><a href="/Html-files/donate.html"> Donate </a></li>
+                <li><a href=""> Jobs</a></li>
+                <li><a href="./login.html"> Sign In / Register</a></li>
             </ul>
-           
-         </div> 
-         <hr class="hr-2">
-    </footer>
-         
-
+               </ul>
+           </div>
+            <!-- div ends her for col 3  -->
+             <!-- col 5 starts here  -->
+           <div class="col col-4">
+    <!-- inportent links for polocies and terms and conditions  -->
+               <h3>Policies:</h3>
+   
+               <ul>
+                   <li><a href="">Privacy</a></li>
+                   <li><a href=""> Tearms & Conditions</a></li>
+                   <li><a href=""> Cookies </a></li>
+                   <li><a href="">Accessibility</a></li>
+                   <li><a href="">All policies</a></li>
+               </ul>
+           </div>
+            <!-- div end here  -->
+           <hr>
+            <!-- col  5 for img  -->
+           <div class="col col-5">
+               <img src="../Footer Bg img.png" alt=" footer img">
+           </div>
+       </div> 
+        <!-- copyright  part   -->
+      
+        <div class="copyright_And_Follow-us">
+   
+           <p>Copyright © 2024 Warmth Wish. All rights reserved.</p>
+           <ul> 
+                <!-- links of social media  -->
+               <li> Follow Us</li>
+               <li><a href="https://en-gb.facebook.com/"><img src="/facebook.png" alt=" facebook"></a></li>
+               <Li><a href="https://twitter.com/?lang=en"><img src="/twitter.png" alt="twitter"></a></Li>
+               <Li><a href="https://uk.linkedin.com/"><img src="/linkedin.png" alt="linkedin"></a></Li>
+               <Li><a href="https://www.instagram.com/"><img src="/instagram.png" alt=" instagram"></a> </Li>
+               <Li><a href="https://www.whatsapp.com/"><img src="/whatsapp.png" alt=" whatsapp"></a></Li>
+           </ul>
+          
+        </div> 
+         <!-- div cose here  -->
+        <hr class="hr-2">  <!--give hrline  -->
+   </footer>
+    <!-- footer ends here  -->
+        
+   
+   
+    <!-- give the  main js file here  -->
    <script src="../main.js"></script>
-
-
+   
+    <!-- give the script link for the data aos libarary  to  access it  -->
    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <!-- initialize the libarary -->
    <script>
+   
        AOS.init();
      </script>
+   
+   
 </body>
 </html>

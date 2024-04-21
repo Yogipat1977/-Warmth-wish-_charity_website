@@ -1,0 +1,270 @@
+  
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log in </title>
+ <!-- main css link  -->
+    <link rel="stylesheet" href="../Index.css">
+
+    <link rel="stylesheet" href="../css-files/Login.css">
+<!-- link for google fonts  -->
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"> <!-- link for icons -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />    <!-- link for google fonts  -->
+<!-- link for the libarary that i have used for the simple animations at  some places  -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> 
+
+
+</head>
+<body>
+    
+   <!-- website logo  -->
+    <div class="div-1"> 
+        <a href="../Index.html"> <img src="../warmth-wish-high-resolution-logo-transparent.png" alt=" my website logo"></a>
+           
+    </div>
+ <!-- nevbar  starts here  -->
+    <div class="div2" id="navbar">
+          <!-- all important  links  -->
+        <a href="../Html-files/AboutUs.html"> <button >About Us</button></a> 
+        <a href="../Html-files/ContactUs.html"><button>Contact us</button> </a>
+        <a href="../Html-files/OurAssortments.html"> <button >Our Assortments</button></a> 
+        <a href="../Html-files/Events.html"> <button>Events</button></a> 
+        <a href="../Html-files/OurServices.html"><button> Our Services</button></a> 
+       <a href="../Html-files/donate.html"><button class="donateBtn">Donate Us</button></a>
+       <a href="../index.html"><button>Home</button></a>
+
+        <!-- search  bar  -->
+               <div class="container">
+                   <form action="https://www.google.com/search" class="search" id="search-bar">
+                       <input type="Search" placeholder="Search Here..." class="Search-input"> 
+                        <!-- div for icons for search  and close   -->
+                           <div class=" Search-Button" id="Search-btn">
+                               <i class="ri-search-2-line search-icon"></i>
+                               <i class="ri-close-line search-close"></i>
+                           </div> 
+                   </form>
+                </div>
+                <!-- search bar ends  -->
+   </div>
+ <!-- nav bar ends -->
+
+ <!-- main space for  two div forms  -->
+<div class="space-for_log-in-sign-in">
+  <!-- form for  sign in  -->
+    <div   class="div-for-sign-in">
+ <!-- heading -->
+        <h2> New member,  <br>  just <span> sign In</span></h2>
+  <!-- form starts form here   with inlin css used -->
+        <form   id="form" style="height: 90% ; width: 90%;  border-radius: 50px;" >
+  <!-- first name div  and input  -->
+            <div class="input-name">
+             <label for="input name"> First Name:-</label> 
+             <input type="text"  placeholder="Full Name" id="name" >
+  
+            </div>
+             <!-- email div and input  -->
+            <div class="input-Email">
+             <label for="email"> E-mail Address:- </label>
+             <input  type="email" name="EmailInput" placeholder="abc@xyz.com">
+            
+            </div>
+             <!-- conform email div and input  -->
+            <div class="input-Email">
+             <label for="email">Conform E-mail:- </label>
+             <input name="EmailInput" placeholder="abc@xyz.com">
+             
+            </div>
+            <!-- contact  div amd input  -->
+            <div class="input-Contact">
+             <label for="input-Contact"> Contact No:-</label>
+             <input type="text">
+           
+            </div>
+              <!-- gender selection div  -->
+            <div class="select-gender">
+             <label for="input-Contact">Gender:-</label>
+             <select name="Gender">
+                 <option value="Male" selected>Male</option>
+                 <option value="Female">Female</option>
+                 <option value="Trans">Trans</option>
+              </select>
+            </div>
+
+              <!-- div for password -->
+            <div class="Address">
+             <label for="password"> password:-</label>
+             <input type="password" placeholder="password"  minlength="8" required>
+            </div>
+           <!-- pera with in line css  used  -->
+            <p style="position:relative; bottom: 10%; text-align:center; word-spacing: 0.5px; font-size: 17px; padding: 0 5%; color: #F4E0b9;">
+                You are simply accepting our terms and conditions and policies by clicking the sign in.</p>
+
+             <div class="submit-class" style=" display:flex; flex-direction:row; height: 10%; width: 100%; justify-content: space-evenly; align-items: center; transform: translateY(-50px);">
+
+                 <input type="submit" class="transparent" name="submit" value="Sign in"> 
+             </div>
+          
+         </form>
+ <!-- form ends  -->
+
+    </div>
+     <!-- sign in div ends here  -->
+
+  <!-- give  vertical line between divs -->
+    <span class="vartical-line"></span>
+
+  <!-- div for log in -->
+    <div class="div-for-log-in">
+
+ <!-- heading  -->
+         <H2> Already a member of <br><span>"warmth wish".</span></H2>
+           <!-- pera  -->
+        <p> Enter your login details to access your account here.</p>
+
+         <!-- div for email and in put as well  -->
+        <div class="input-Email-2">
+            <label for="email"> E-mail Address:- </label>
+            <input  type="email" name="EmailInput" placeholder="abc@xyz.com">
+           </div> 
+
+            <!-- input for pass word  -->
+           <div class="input-pasword">
+            <label for="password"> password:- </label>
+            <input type="password"name="password" minlength="8" required />
+           </div>
+           
+
+           <!-- div foe input  for submit -->
+           <div class="submit-class" style=" display:flex; flex-direction:row; height: 10%; width: 100%; justify-content: space-evenly; align-items: center; ">
+
+            <input type="submit" class="transparent" name="submit" value="Log in"> 
+        </div>
+           
+    </div>
+
+    <!-- log in div ends  -->
+  
+</div>
+ <!-- main space for two div forms  ends   -->
+
+
+
+
+
+
+
+ <!-- footer starts here  -->
+ <footer>
+    <!-- div row for  all col in it   -->
+       <div class="Row"> 
+        <!-- column for logo and address  -->
+           <div class="col"> 
+               <img src="../Footer logo img.png"  class="footer-logo">
+    <!-- address  -->
+               <h3> Address:</h3>
+   
+                <p>731- A Romford Road,</p>
+                <p>Manor park,</p>
+                <p>London. </p>
+                <p> Postcode :- E12 5AW</p>
+              
+           </div>
+            <!-- col 1 close  -->
+    
+            <!-- col 2 starts here  -->
+           <div class="col col-2">  
+    <!-- heading  -->
+               <h3> Useful Links:</h3>
+                <!-- links  that i have in navbar  -->
+               <ul>
+                   <li><a href="/Html-files/AboutUs.html"> About us </a></li>
+                   <li><a href="/Html-files/ContactUs.html">Contact Us</a></li>
+                   <li><a href="/Html-files/OurServices.html"> Our Services </a></li>
+                   <li><a href="./Html-files/OurAssortments.html"> Shop </a></li>
+                   <li><a href="Events.html">Events</a></li>
+               </ul>
+   
+           </div> 
+           <!-- dive close for col 2 -->
+           <!-- col 3 starts  -->
+           <div class="col  col-3">
+                <!-- heading  -->
+               <h3>Be part of our  mission:</h3>
+                <!-- link for to connect with us  -->
+               <ul>
+                   <li><a href="./login.html"> Join Us</a></li>
+                   <li><a href=""> Volunteer</a></li>
+                   <li><a href="/Html-files/donate.html"> Donate </a></li>
+                   <li><a href=""> Jobs</a></li>
+                   <li><a href="./login.html"> Sign In / Register</a></li>
+               </ul>
+           </div>
+            <!-- div ends her for col 3  -->
+             <!-- col 5 starts here  -->
+           <div class="col col-4">
+    <!-- inportent links for polocies and terms and conditions  -->
+               <h3>Policies:</h3>
+   
+               <ul>
+                   <li><a href="">Privacy</a></li>
+                   <li><a href=""> Tearms & Conditions</a></li>
+                   <li><a href=""> Cookies </a></li>
+                   <li><a href="">Accessibility</a></li>
+                   <li><a href="">All policies</a></li>
+               </ul>
+           </div>
+            <!-- div end here  -->
+           <hr>
+            <!-- col  5 for img  -->
+           <div class="col col-5">
+               <img src="../Footer Bg img.png" alt=" footer img">
+           </div>
+       </div> 
+        <!-- copyright  part   -->
+      
+        <div class="copyright_And_Follow-us">
+   
+           <p>Copyright © 2024 Warmth Wish. All rights reserved.</p>
+           <ul> 
+                <!-- links of social media  -->
+               <li> Follow Us</li>
+               <li><a href="https://en-gb.facebook.com/"><img src="/facebook.png" alt=" facebook"></a></li>
+               <Li><a href="https://twitter.com/?lang=en"><img src="/twitter.png" alt="twitter"></a></Li>
+               <Li><a href="https://uk.linkedin.com/"><img src="/linkedin.png" alt="linkedin"></a></Li>
+               <Li><a href="https://www.instagram.com/"><img src="/instagram.png" alt=" instagram"></a> </Li>
+               <Li><a href="https://www.whatsapp.com/"><img src="/whatsapp.png" alt=" whatsapp"></a></Li>
+           </ul>
+          
+        </div> 
+         <!-- div cose here  -->
+        <hr class="hr-2">  <!--give hrline  -->
+   </footer>
+    <!-- footer ends here  -->
+
+ <!-- give the  main js file here  -->
+ <script src="../main.js"></script>
+
+ <!-- give the script link for the data aos libarary  to  access it  -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<!-- initialize the libarary -->
+<script>
+
+    AOS.init();
+  </script>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+

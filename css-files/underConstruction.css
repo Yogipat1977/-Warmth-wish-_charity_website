@@ -1,0 +1,114 @@
+
+.under_construction-text-div
+{
+    height: 730px;
+    width: 50%;
+    background-color:#293040;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:start;
+   
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  body
+  {
+  background-color: #FDEEDC;
+  display: flex;
+
+  }
+
+
+  .image-div
+
+  {
+    position: relative;
+    right: 0;
+    height:730px ;
+    width:50%;
+      background: url(../under\ construction\ img.png);
+      background-size: cover;
+  }
+ .under_construction-text-div h1
+  {
+    font-size: 60px;
+     margin-left: 10%;
+      color: #FDEEDC;
+  }
+
+  .under_construction-text-div h1::first-letter
+  {
+     font-size: 150px;
+      color: #99582A;
+  }
+  .under_construction-text-div  h2
+  {
+
+    font-size: 30px;
+    flex-basis: 00%;
+    margin-left: 12%;
+     color: #FDEEDC;
+  }
+
+  
+  .under_construction-text-div span
+  {
+    color:#99582A;
+     font-size: 50px;
+  }
+  .under_construction-text-div  p
+  {
+    font-size: 17px;
+    flex-basis: 0%;
+    margin-left: 15%;
+     color: #FDEEDC;
+  }
+ 
+
+  .email
+    {
+        height: 6%;
+        width: 50%;
+        margin: 0  0 0 15%;
+        border: solid 2px #FDEEDC;
+        display: flex;
+        align-items: center;
+        border-radius: 50px;
+    }
+    .email input
+    {
+        height: 20px;
+        margin-left: 15px;
+        outline: none;
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        color: #FDEEDC;
+    }
+     .email label
+    {
+        position: absolute;
+        margin-left: 25px;
+        font-weight: 500;
+        padding: 0 6px 0 6px;
+        transform: translateY(-135%);
+        background-color: #293040;
+         color: #FDEEDC;
+    } 
+
+    .under_construction-text-div input[type="submit"]
+    {
+        height: 40px;
+         width: 110px;
+         border: 2px solid #FDEEDC;
+         background-color: transparent;
+          color: #FDEEDC;
+         border-radius: 20px;
+          margin-left:  15%;
+           cursor: pointer;
+    }

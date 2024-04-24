@@ -59,7 +59,7 @@
     } 
     .input-Contact
     {
-        height: 8%;
+        height: 7%;
         width: 50%;
         margin: 35px  0 0 10px;
         border: solid 2px #290001;
@@ -76,7 +76,7 @@
         width: 100%;
         background-color: transparent;
         border: none;
-        color: #FDEEDC;
+        color: #290001;
     }
     .input-Contact label
     {
@@ -124,7 +124,7 @@
     {
         height: 8%;
         width: 95%;
-        margin: 0 0 20px 10px;
+        margin: 10px 0 20px 10px;
         border: solid 2px #290001;
         transform: translateY(-60px);
         display: flex;
@@ -138,7 +138,7 @@
         margin-left: 25px;
         font-weight: 500;
         padding: 0 6px 0 6px;
-        transform: translateY(-70%);
+        transform: translateY(-60%);
         background-color: #FDEEDC;
     }
     .Address input
@@ -304,45 +304,57 @@
                  <p style="position: relative; color: #FDEEDC; margin: 0 10% 0 5%; text-align: center ; word-spacing: 1px; font-size: 18px; padding: 20px;" >
                     Reserve a collection for a donation.  We promise to respond to you right away and provide you with our best assistance in having your belongings collected. 
                      </p>
-                    <form   id="form" style="height: 70% ; width: 90%; background-color:#FDEEDC; margin-left: 4%; border-radius: 50px;" >
+                    <form  id="form" style="height: 70% ; width: 90%; background-color:#FDEEDC; margin-left: 4%; border-radius: 50px;"  onsubmit="return checkfield()">
 
                        <div class="input-name">
                         <label for="input name"> First Name:-</label> 
-                        <input type="text"  placeholder="Full Name" id="name" >
-             
+                        <input type="text"  placeholder="Full Name" id="Firstname" >
                        </div>
+
+                       <p id="error1"  style="margin-left: 3%; color: brown; position: absolute;"></p>
                        
                        <div class="input-Email">
                         <label for="email"> E-mail Address:- </label>
-                        <input  type="email" name="EmailInput" placeholder="abc@xyz.com">
-                       
+                        <input  type="email" name="EmailInput" placeholder="abc@xyz.com" id="email">
                        </div>
+                       <p id="emailerror" style="margin-left: 3%; color: brown; position: absolute;"></p>
+
+
                        <div class="input-Email">
                         <label for="email">Conform E-mail:- </label>
-                        <input name="EmailInput" placeholder="abc@xyz.com">
-                        
+                        <input name="EmailInput" typle="email"placeholder="abc@xyz.com" id="email2">
                        </div>
-                       <div class="input-Contact">
-                        <label for="input-Contact"> Contact No:-</label>
-                        <input type="text">
-                      
+                       <p id="error2"  style="margin-left: 3%; color: brown; position: absolute;"></p>
+
+
+                       <div class="input-Contact" >
+                        <label for="input-Contact" > Contact No:-</label>
+                        <input type="text" id="contact">
                        </div>
+
+                       <p id="error3" style=" margin-left: 3%; color: brown; position: absolute;"></p>
+
                        <div class="select-gender">
-                        <label for="input-Contact">Gender:-</label>
+                        <label for="input-gender">Gender:-</label>
                         <select name="Gender">
                             <option value="Male" selected>Male</option>
                             <option value="Female">Female</option>
                             <option value="Trans">Trans</option>
                          </select>
                        </div>
-                       <div class="Address">
+                       <div class="Address" >
                         <label for="input-address"> Address:-</label>
-                        <input type="input" placeholder=" line 1">
+                        <input type="input" placeholder=" line 1" id="address">
+
                        </div>
+
+
+                       <p id="Addresserror" style="color: brown; position:absolute; transform: translateY(-80px); margin-left: 3%;"> </p>
+
                        <div class="Address">
-                        <input type="input" placeholder="line 2">
+                        <input type="input" placeholder="line 2" >
                        </div>
-                       <p style="position:relative; bottom: 10%; text-align:center; word-spacing: 0.5px; font-size: 17px; padding: 0 5%;">
+                       <p style="position:relative; bottom:10%; text-align:center; word-spacing: 0.5px; font-size: 17px; padding: 0 5%;">
                         Select the time that works best for you, and we'll set up collecting  services to make sure everything is convenient for you along the way. </p>
 
                         <div class="submit-class" style=" display:flex; flex-direction:row; height: 10%; width: 100%; justify-content: space-evenly; align-items: center; transform: translateY(-50px);">
@@ -363,7 +375,7 @@
                     Want to donate ?
                 </h3>
                 
-                <form action="../index.html" style="height: 65% ; width: 90%; background-color:#290001; margin-left: 6%; border-radius: 100px; display: flex; flex-direction: column; align-items: center;">
+                <form action="" style="height: 65% ; width: 90%; background-color:#290001; margin-left: 6%; border-radius: 100px; display: flex; flex-direction: column; align-items: center;" onclick="checkfield()">
                 <h3 style="color: #FDEEDC; font-size: 25px; margin: 20px 0px  0 0px;">Provide your information:-</h3>
                 <p style="color: #FDEEDC;  margin: 25px 20px 10px 55px; word-spacing: 2px;  font-size: 18px;">
                     Use the selector to select your favorite selection from various charitable options, such as clothing, electronics, furniture, and household necessities.
@@ -372,8 +384,8 @@
 
                 <div class="input-name-2">
                     <label for="input name-2">  Name:-</label> 
-                    <input type="text" placeholder="Full Name">
-                    <p class="name massage">Please enter a valid Email.</p>
+                    <input type="text" placeholder="Full Name" id="Firstname">
+                    <p id="error1" class="name massage">Please enter a valid Email.</p>
                    </div>
                    
                    <div class="select-charity-items" style="margin-right: 47.5%;">
@@ -450,9 +462,9 @@
                <ul>
                    
                 <li><a href="./login.html"> Join Us</a></li>
-                <li><a href=""> Volunteer</a></li>
+                <li><a href="underConstruction.html"> Volunteer</a></li>
                 <li><a href="/Html-files/donate.html"> Donate </a></li>
-                <li><a href=""> Jobs</a></li>
+                <li><a href="underConstruction.html"> Jobs</a></li>
                 <li><a href="./login.html"> Sign In / Register</a></li>
             </ul>
                </ul>
@@ -464,11 +476,11 @@
                <h3>Policies:</h3>
    
                <ul>
-                   <li><a href="">Privacy</a></li>
-                   <li><a href=""> Tearms & Conditions</a></li>
-                   <li><a href=""> Cookies </a></li>
-                   <li><a href="">Accessibility</a></li>
-                   <li><a href="">All policies</a></li>
+                   <li><a href="underConstruction.html">Privacy</a></li>
+                   <li><a href="underConstruction.html"> Tearms & Conditions</a></li>
+                   <li><a href="underConstruction.html"> Cookies </a></li>
+                   <li><a href="underConstruction.html">Accessibility</a></li>
+                   <li><a href="underConstruction.html">All policies</a></li>
                </ul>
            </div>
             <!-- div end here  -->

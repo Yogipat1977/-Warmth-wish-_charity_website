@@ -29,24 +29,6 @@ function stickyNavbar()
   }
 }
 
- document.addEventListener('DOMContentLoaded', function()
-{
-  var videoList =['video 1.mp4','video 2.mp4','video3.mp4','video 4.mp4'];
-  var currentVideo =0;
-  var videoElement = document.getElementById('video');
-   function changeVideo() 
-   {
-      currentVideo = ( currentVideo + 1)% videoList.length;
-      videoElement.style.opacity = '0.2'; 
-      setTimeout(function() 
-      {
-          videoElement.src = videoList[currentVideo];
-          videoElement.style.opacity = '1'; 
-      }, 1000)
-    }
-    setInterval(changeVideo, 5000);
-});
- 
 
 
 
@@ -91,9 +73,82 @@ window.addEventListener('scroll', function()
   }
 });
 
-			function ClickMessage()
-			{
- 			alert("You have successfully submitted your");
-		 	}
 
 
+ const firstname = document.getElementById("Firstname");
+ const email = document.getElementById("email");
+ const conformemail = document.getElementById("email2");
+ const Contact  = document.getElementById("contact");
+ const Address  = document.getElementById("address");
+ let flag = 1;
+
+
+
+
+
+ function checkfield()
+ {
+   if (firstname.value =="")
+   {
+   document.getElementById("error1").innerHTML ="First name require";
+    flag = 0;
+
+   }else
+   {
+    document.getElementById("error1").innerHTML ="";
+    flag = 1;
+   } 
+
+   if(email.value=="")
+   {
+    document.getElementById("emailerror").innerHTML="Email Address Require.";
+    flag = 0;
+
+   } else
+   {
+    document.getElementById("emailerror").innerHTML ="";
+     flag = 1;
+   }
+
+    if(conformemail.value=="")
+    {
+    document.getElementById("error2").innerHTML="please conform your email.";
+    flag = 0;
+    } 
+     else
+     {
+      document.getElementById("error2").innerHTML="";
+       flag = 1;
+     }
+
+    if(Contact.value=="")
+    {
+      document.getElementById("error3").innerHTML="please enter your contact number.";
+       flag = 0;
+      } 
+     else
+    {
+       document.getElementById("error3").innerHTML="";
+        flag = 1;
+     }
+    if (Address.value=="")
+     {
+        document.getElementById("Addresserror").innerHTML="this field is empty.";
+        flag = 0;
+      }  
+      else
+      {
+        document.getElementById("Addresserror").innerHTML="";
+         flag = 1;
+      }
+
+
+      if(flag)
+      {
+        return true;
+      }
+       else
+       {
+        return false;
+      }
+ }

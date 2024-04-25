@@ -90,7 +90,7 @@ window.addEventListener('scroll', function()
  {
    if (firstname.value =="")
    {
-   document.getElementById("error1").innerHTML ="First name require";
+   document.getElementById("error1").innerHTML ="*First name require";
     flag = 0;
 
    }else
@@ -101,7 +101,7 @@ window.addEventListener('scroll', function()
 
    if(email.value=="")
    {
-    document.getElementById("emailerror").innerHTML="Email Address Require.";
+    document.getElementById("emailerror").innerHTML="*Email Address Require.";
     flag = 0;
 
    } else
@@ -112,7 +112,7 @@ window.addEventListener('scroll', function()
 
     if(conformemail.value=="")
     {
-    document.getElementById("error2").innerHTML="please conform your email.";
+    document.getElementById("error2").innerHTML="*please conform your email.";
     flag = 0;
     } 
      else
@@ -123,7 +123,7 @@ window.addEventListener('scroll', function()
 
     if(Contact.value=="")
     {
-      document.getElementById("error3").innerHTML="please enter your contact number.";
+      document.getElementById("error3").innerHTML="*please enter your contact number.";
        flag = 0;
       } 
      else
@@ -133,7 +133,7 @@ window.addEventListener('scroll', function()
      }
     if (Address.value=="")
      {
-        document.getElementById("Addresserror").innerHTML="this field is empty.";
+        document.getElementById("Addresserror").innerHTML="*this field is empty.";
         flag = 0;
       }  
       else

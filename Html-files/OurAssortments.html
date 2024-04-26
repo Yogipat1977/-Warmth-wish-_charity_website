@@ -12,9 +12,9 @@
   <!-- link for google fonts  -->
 <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"> <!-- link for icons -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />    <!-- link for google fonts  -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" >    <!-- link for google fonts  -->
 <!-- link for the libarary that i have used for the simple animations at  some places  -->
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> 
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" > 
 
 
 </head>
@@ -29,49 +29,64 @@
      </div>        
     </div>
 
-    <div class="div2" id="navbar">
-        
-        <a href="../Html-files/AboutUs.html"> <button >About Us</button></a> 
-        <a href="../Html-files/ContactUs.html"><button>Contact us</button> </a>
-        <a href="../Html-files/OurAssortments.html"> <button >Our Assortments</button></a> 
-        <a href="../Html-files/Events.html"> <button>Events</button></a> 
-        <a href="../Html-files/OurServices.html"><button> Our Services</button></a> 
-        <a href="../Html-files/donate.html"><button class="donateBtn">Donate Us</button></a>
-        <a href="../index.html"><button>Home</button></a>
+        <!-- div 2 for navbar  -->
+        <div class="div2" id="navbar">
 
-               <div class="container">
-                   <form action="https://www.google.com/search" class="search" id="search-bar">
-                       <input type="Search" placeholder="Search Here..." class="Search-input"> 
-                           <div class=" Search-Button" id="Search-btn">
-                               <i class="ri-search-2-line search-icon"></i>
-                               <i class="ri-close-line search-close"></i>
-                           </div> 
-                   </form>
-                </div>
-      </div>
+            <a href="./Html-files/donate.html" id="donateBtn">Donate Us</a>
+            <!-- div for search bar  -->
+            <div class="container">
+                <!-- i add form to with an id and class to give styling and java script to toggle the search bar  -->
+                <form class="search" id="search-bar">
+                    <!-- add input for  sear input  -->
+                    <input type="Search" placeholder="Search Here..."
+                        class="Search-input">
+                    <!-- add div for search and  close icons  -->
+                    <div class=" Search-Button" id="Search-btn">
+                        <i class="ri-search-2-line search-icon"></i>
+                        <i class="ri-close-line search-close"></i>
+                    </div>
+                    <!-- div end here  -->
+                </form>
+                <!-- form ends here  -->
+            </div>
+            <!-- the div for search bar endes here  -->
+
+            <!-- link for my all 6  main pages   -->
+            <a href="/index.html">Home</a>
+            <a href="/Html-files/AboutUs.html"> About Us</a>
+            <a href="/Html-files/ContactUs.html">Contact us </a>
+            <a href="/Html-files/OurAssortments.html">Our Assortments</a>
+            <a href="/Html-files/Events.html">Events</a>
+            <a href="/Html-files/OurServices.html"> Our Services</a>
+
+        </div>
+        <!-- div for navbar ends here  -->
 
 
+        <!-- our assortments  intro  div  -->
    <div class="ourAssortments-intro_div">
+    
+    <!-- heading  -->
+    <h1 style="padding:5%;"> What we collect is <br> what you <span> Donate.</span></h1>
 
-    <h1 style="padding: 5%;"> What we collect is <br> what you <span> Donate.</span></h1>
-
-
+     <!-- peragraph  -->
     <p>
         Change starts at home. We've carefully chosen furniture, equipment, and apparel that is fashionable, useful, and has a good effect.
 
 
     </p>
 
-     <img src="/our assortment intro img.jpg" alt="ourAssortments-intro_img"  data-aos="zoom-in"  data-aos-duration="1200">
+     <!-- the intro img  for our assortment  and also add the animation libarary WHICH IS DATA AOS  -->
+     <img src="/our_assortment-intro_img.jpg" alt="ourAssortments-intro_img"  data-aos="zoom-in"  data-aos-duration="1200">
    </div>
 
-
+     <!-- our assortment  main div starts  -->
     <div class=" our_assortments-main-div-1">
-        
+         <!-- main pera 1  -->
         <p class="p_heading">
             Breathe New Life into Your Home: Sustainable Furniture <br> & Reliable Appliances (Guaranteed!)
         </p>
-
+     <!--  sub peragraph -->
         <p id="p_topic">
             We believe in creating beautiful homes that are budget-friendly and eco-conscious. 
             That's why we offer a curated selection of high-quality refurbished furniture, meticulously 
@@ -80,50 +95,66 @@
         </p>
 
     </div>
+    <!-- main div 1 ends -->
 
+    <!-- our assortments  img div  -->
     <div class="our-assortments-img-div">
 
+         <!-- give the horizontal-line  with the help of  span   -->
         <span class="horizontal-line"></span>
 
+ <!-- create a three div  for img  -->
 
         <div class="block_1">
+             <!-- heading  -->
             <h5>cloths</h5>
+             <!-- img 1  -->
             <img src="../fashion.png" alt="cloths charity img" >
         </div>
 
         <div class="block_2">
+             <!-- heading  -->
             <h5>Furniture</h5>
+             <!-- img 2  -->
             <img src="/furniture.png" alt="Furniture">
         </div>
 
         <div class="block_3">
+             <!-- heading  -->
             <h5>Electronics</h5>
+             <!-- img 3 -->
             <img src="/electric-appliance.png" alt="electric-appliance">
         </div>
 
     </div>
+ <!-- the img div  ends  -->
 
-
+  <!-- our assortments main div 2 start  here  -->
+   <!-- this div is for pera  -->
     <div class=" our_assortments-main-div-2">
    
+         <!-- main pera  -->
         <p class="p_heading">
             We understand that building a home goes beyond furniture and appliances. That's why our charity extends support by offering a wide variety of essential items.
         </p>
 
+         <!-- div for  disciption of our assortments -->
         <div>
-
+             <!-- pera 1 fir clothing  and kitchenware  -->
             <p id="p_topic-1">
                <b> Clothing:</b> <br> <br>We offer gently used clothing for all ages and styles, boosting confidence for the day ahead. <br> <br>
               <b> Kitchenware: </b> <br> <br> We provide pots, pans, utensils, and dishes for healthy, affordable meals. <br> <br>
              
             </p>
-
+             <!-- pera for electronics and home decor  -->
             <p id="p_topic-2">
                 <b> Electronics: </b> <br> <br> Bridging the digital gap, we offer computers, tablets, and more to support education and job opportunities (subject to availability).  <br> <br>
                 <b> Home Decor:</b> <br> <br> We offer donated lamps, rugs, picture frames, and decorative items for personalized living spaces.  <br> <br>
             </p>
         </div>
+         <!-- discription  div ends  -->
     </div>
+     <!-- the main div 2 ends here   -->
 
 
 
@@ -136,7 +167,7 @@
        <div class="Row"> 
         <!-- column for logo and address  -->
            <div class="col"> 
-               <img src="../Footer logo img.png"  class="footer-logo">
+               <img src="/Footer_logo_img.png"  alt="footer logo img " class="footer-logo">
     <!-- address  -->
                <h3> Address:</h3>
    
@@ -196,7 +227,7 @@
            <hr>
             <!-- col  5 for img  -->
            <div class="col col-5">
-               <img src="../Footer Bg img.png" alt=" footer img">
+               <img src="/Footer_Bg_img.png" alt=" footer img">
            </div>
        </div> 
         <!-- copyright  part   -->

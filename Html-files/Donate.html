@@ -11,14 +11,15 @@
 <!-- link for google fonts  -->
 <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"> <!-- link for icons -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />    <!-- link for google fonts  -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" >    <!-- link for google fonts  -->
 <!-- link for the libarary that i have used for the simple animations at  some places  -->
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> 
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" > 
 
-
+ <!-- give embadded styling to this page  -->
 
    <style>
         
+    /* give  decoration to the  heading  of left and right form div */
     .donate-Form_left-div h1::after,
     .donate-Form_right-div h1::after
     {
@@ -28,6 +29,7 @@
 
     }
 
+         /* give style to the email and name div  */
     .input-name,.input-Email
     {
         height: 8%;
@@ -38,6 +40,7 @@
         align-items: center;
         border-radius: 50px;
     }
+     /* give style to the input  of name and email  */
     .input-name input,.input-Email input
     {
         height: 20px;
@@ -48,6 +51,7 @@
         border: none;
         color: #290001;
     }
+     /* styling to the lable  for name and email  */
      .input-name label, .input-Email label
     {
         position: absolute;
@@ -57,6 +61,7 @@
         transform: translateY(-135%);
         background-color: #FDEEDC;
     } 
+      /* style contact div  */
     .input-Contact
     {
         height: 7%;
@@ -67,7 +72,7 @@
         align-items: center;
         border-radius: 50px;
     }
-
+     /* style contact input  */
     .input-Contact input
     {
         height: 20px;
@@ -77,7 +82,8 @@
         background-color: transparent;
         border: none;
         color: #290001;
-    }
+    } 
+     /* style to the lable  of contact  */
     .input-Contact label
     {
         position: absolute;
@@ -87,6 +93,7 @@
         transform: translateY(-135%);
         background-color: #FDEEDC;
     }
+     /* style to the gender  div  */
     .select-gender
      {
         position: relative; 
@@ -100,6 +107,7 @@
         align-items: center;
         border-radius: 50px;
     }
+      /* lable styling  */
     .select-gender label
     {
         position: absolute;
@@ -109,6 +117,7 @@
         transform: translateY(-135%);
         background-color: #FDEEDC;
     }
+     /* give style to the selection */
     .select-gender select
     {
         height: 20px;
@@ -120,6 +129,7 @@
         color: #290001;
     }
 
+     /* give the style to the address div  */
     .Address
     {
         height: 8%;
@@ -132,6 +142,7 @@
         border-radius: 40px;
     }
 
+     /* lable styling  */
     .Address label
     {
         position: absolute;
@@ -141,6 +152,8 @@
         transform: translateY(-60%);
         background-color: #FDEEDC;
     }
+
+    /* give styling to the address input  */
     .Address input
     {
         height: 20px;
@@ -152,6 +165,7 @@
         border: none;
         color: #290001;
     }
+     /* give stylig to the submit and date input   */
      .submit-class input
      {
          height: 50%;
@@ -164,6 +178,7 @@
          cursor: pointer;
      }
 
+      /* give style to the right side name div */
     .input-name-2
     {
         height: 8%;
@@ -174,6 +189,7 @@
         align-items: center;
         border-radius: 50px;
     }
+      /* lable styling  */
     .input-name-2 label
     {
         
@@ -185,6 +201,7 @@
         background-color: #290001;
          color: #FDEEDC;
     }
+    /* give style to the div  input  of name 2  */
     .input-name-2 input
     {
         height: 20px;
@@ -195,15 +212,17 @@
         border: none;
         color: #290001;
     }
+     /* give styling to the place holder  of the input  */
     .input-name-2 input[type="text"]::placeholder
      {
         color: #FDEEDC; /* Change placeholder text color */
      }
-
+      /* give  color to the input text  */
         .input-name-2 input[type="text"] 
         {
         color: #FDEEDC; /* Change input text color */
         }
+         /* gve styling to the  selection div of charity items  */
        .select-charity-items
        {
         height: 8%;
@@ -214,6 +233,7 @@
         align-items: center;
         border-radius: 50px;
         }
+         /* give lable  style to the charity items  div  */
         .select-charity-items label
         {
         position: absolute;
@@ -225,6 +245,7 @@
          color: #FDEEDC; 
         }
 
+         /* give style to the select  of the selection  */
         .select-charity-items select
         {   
         height: 20px;
@@ -256,168 +277,214 @@
      </div>  
              <!-- button end here  -->
      </div>
- <!-- button div ends  -->
-              
-    </div>
-     <!-- header ends  -->
- <!-- nav bar starts  here  -->
-    <div class="div2" id="navbar">
-          <!-- all links for the nav bar that connect my  other pages  -->
-        <a href="../Html-files/AboutUs.html"> <button >About Us</button></a> 
-        <a href="../Html-files/ContactUs.html"><button>Contact us</button> </a>
-        <a href="../Html-files/OurAssortments.html"> <button >Our Assortments</button></a> 
-        <a href="../Html-files/Events.html"> <button>Events</button></a> 
-        <a href="../Html-files/OurServices.html"><button> Our Services</button></a> 
-       <a href="../Html-files/donate.html"><button class="donateBtn">Donate Us</button></a>
-       <a href="../index.html"><button>Home</button></a>
-<!-- all links ends  -->
+ <!-- header  div ends  -->
+    
+        <!-- div 2 for navbar  -->
+        <div class="div2" id="navbar">
 
-       <!-- my search  bar starts from  here -->
-               <div class="container">    
-                 <!-- form create for search bar   and give  id and class both for the js animation  -->
-                   <form action="https://www.google.com/search" class="search" id="search-bar"> 
-                     <!-- give imput here  -->
-                       <input type="Search" placeholder="Search Here..." class="Search-input"> 
-                       <!-- search and close icons for search bar  with id and class both  -->
-                           <div class=" Search-Button" id="Search-btn"> 
-                               <i class="ri-search-2-line search-icon"></i>
-                               <i class="ri-close-line search-close"></i>
-                           </div> 
-                   </form>
-                    <!-- form close  -->
-                </div>
-                <!-- div close  -->
-   </div>
+            <a href="./Html-files/donate.html" id="donateBtn">Donate Us</a>
+            <!-- div for search bar  -->
+            <div class="container">
+                <!-- i add form to with an id and class to give styling and java script to toggle the search bar  -->
+                <form class="search" id="search-bar">
+                    <!-- add input for  sear input  -->
+                    <input type="Search" placeholder="Search Here..." class="Search-input">
+                    <!-- add div for search and  close icons  -->
+                    <div class=" Search-Button" id="Search-btn">
+                        <i class="ri-search-2-line search-icon"></i>
+                        <i class="ri-close-line search-close"></i>
+                    </div>
+                    <!-- div end here  -->
+                </form>
+                <!-- form ends here  -->
+            </div>
+            <!-- the div for search bar endes here  -->
 
-<!-- header end  -->
+            <!-- link for my all 6  main pages   -->
+            <a href="/index.html">Home</a>
+            <a href="/Html-files/AboutUs.html"> About Us</a>
+            <a href="/Html-files/ContactUs.html">Contact us </a>
+            <a href="/Html-files/OurAssortments.html">Our Assortments</a>
+            <a href="/Html-files/Events.html">Events</a>
+            <a href="/Html-files/OurServices.html"> Our Services</a>
+
+        </div>
+        <!-- div for navbar ends here  -->
+ 
 
 
-
+         <!-- i give inline styling  to the  form page  -->
+         <!-- main div for form space  give  display flex  and  put it in a center using justify  cotent. also give hight , width and  bg color  -->
     <div style="  background:#49111C; display: flex;justify-content: center; align-items: center;height:1000px; width: 100%;">
-
+        <!-- div for form  with same  styling  but different hight and width and color  -->
         <div style=" background:#FDEEDC; height:90%; width: 80%;border-radius: 100px;display: inline-flex; flex-direction: row;">
-
+ <!-- dive on left side  with   bg color   -->
             <div class="donate-Form_left-div" style=" background-color: #290001; height: 900px; width: 50%;  border-radius: 100px 50px 50px 100px ; display: flex; justify-content:space-around; place-items: start;  flex-direction: column;">
-
+                 <!-- give heading and put it in a center  -->
                  <h1  style="position: relative; color: #FDEEDC; font-size: 40px; text-align: center; margin: 2% 0 0 5%;">Book a Collection</h1>
-
+                 <!-- give pera  -->
                  <p style="position: relative; color: #FDEEDC; margin: 0 10% 0 5%; text-align: center ; word-spacing: 1px; font-size: 18px; padding: 20px;" >
                     Reserve a collection for a donation.  We promise to respond to you right away and provide you with our best assistance in having your belongings collected. 
                      </p>
+                        <!-- form  with id form  and styling  and also add the onclick function for the form validation  -->
                     <form  id="form" style="height: 70% ; width: 90%; background-color:#FDEEDC; margin-left: 4%; border-radius: 50px;"  onsubmit="return checkfield()">
-
+                          <!-- make div for input name  -->
                        <div class="input-name">
-                        <label for="input name"> First Name:-</label> 
+                         <!-- give lable tp the input  -->
+                        <label for="Firstname"> First Name:-</label> 
+                         <!-- give input with type text  -->
                         <input type="text"  placeholder="Full Name" id="Firstname" >
                        </div>
-
+                        <!-- pera for error massage with id  and some style  -->
                        <p id="error1"  style="margin-left: 3%; color: brown; position: absolute;"></p>
-                       
+                        <!-- give  div for email  -->
                        <div class="input-Email">
+                         <!-- lable for email  -->
                         <label for="email"> E-mail Address:- </label>
+                         <!-- give input for email with type email   -->
                         <input  type="email" name="EmailInput" placeholder="abc@xyz.com" id="email">
                        </div>
+                       <!-- pera for error  -->
                        <p id="emailerror" style="margin-left: 3%; color: brown; position: absolute;"></p>
 
-
+                        <!-- give div for conform email  -->
                        <div class="input-Email">
+                         <!-- lable  -->
                         <label for="email">Conform E-mail:- </label>
-                        <input name="EmailInput" typle="email"placeholder="abc@xyz.com" id="email2">
+                         <!-- input  with type email  -->
+                        <input name="EmailInput" type="email" placeholder="abc@xyz.com" id="email2">
                        </div>
+                        <!-- error message  -->
                        <p id="error2"  style="margin-left: 3%; color: brown; position: absolute;"></p>
 
-
+                        <!-- contact div  -->
                        <div class="input-Contact" >
-                        <label for="input-Contact" > Contact No:-</label>
-                        <input type="text" id="contact">
-                       </div>
+                         <!-- lable  -->
+                        <label for="contact" > Contact No:-</label> 
+                        <!-- inpute for contact with type text  -->
+                        <input type="text" id="contact" >
 
+                       </div>
+                        <!-- error pera  -->
                        <p id="error3" style=" margin-left: 3%; color: brown; position: absolute;"></p>
 
+                         <!-- selection div  -->
                        <div class="select-gender">
-                        <label for="input-gender">Gender:-</label>
-                        <select name="Gender">
+                         <!-- lable  -->
+                        <label for="gender">Gender:-</label>
+                        <!-- Use select  for gender  -->
+                        <select name="Gender" id="gender">
+                             <!-- give multiple options  -->
                             <option value="Male" selected>Male</option>
                             <option value="Female">Female</option>
                             <option value="Trans">Trans</option>
                          </select>
                        </div>
+                       <!-- address div  -->
                        <div class="Address" >
-                        <label for="input-address"> Address:-</label>
-                        <input type="input" placeholder=" line 1" id="address">
+                         <!-- lable  -->
+                        <label for="address"> Address:-</label>
+                         <!-- input for address  -->
+                        <input type="text" placeholder=" line 1" id="address">
 
                        </div>
 
-
+                       <!-- error pera  -->
                        <p id="Addresserror" style="color: brown; position:absolute; transform: translateY(-80px); margin-left: 3%;"> </p>
 
+                        <!-- address div  -->
                        <div class="Address">
-                        <input type="input" placeholder="line 2" >
+                        <!-- inpute type text  for second line of address  -->
+                        <input type="text" placeholder="line 2" >
                        </div>
+                        <!-- give pera with some styling  -->
                        <p style="position:relative; bottom:10%; text-align:center; word-spacing: 0.5px; font-size: 17px; padding: 0 5%;">
                         Select the time that works best for you, and we'll set up collecting  services to make sure everything is convenient for you along the way. </p>
-
+                         <!-- div for submit  form and for  date to choose the collection  -->
                         <div class="submit-class" style=" display:flex; flex-direction:row; height: 10%; width: 100%; justify-content: space-evenly; align-items: center; transform: translateY(-50px);">
-                             <input type="date" style=" background-color: #FDEEDC; color: #290001; ">
+                             <!-- input  for date  -->
+                             <input type="date" style=" background-color: #FDEEDC; color: #290001; "> 
+                             <!-- input for submit  -->
                             <input type="submit" class="transparent" name="submit" value="Submit"> 
                         </div>
-                     
+                     <!-- the div end  -->
                     </form>
+                     <!-- the form end  -->
 
             </div>
-
+             <!-- left side div ends  -->
+            
+              <!-- the right side div start  -->
 
             <div class="donate-Form_right-div" style="background-color: #FDEEDC; position: relative; height: 900px; width: 50%; border-radius: 0 100px 100px 0; display: flex; justify-content: space-around; align-items: start;flex-direction: column;">
-
+                 <!-- heading with some style  -->
                 <h1  style="position: relative; color: #290001; font-size: 40px; text-align: center; margin: 5% 0 5% 10%; text-align: start;"> let's Contribute<br>Together</h1>
-
+                <!-- another hading  -->
                 <h3 style="font-size: 35px; color: #290001; margin-left: 20%;">
                     Want to donate ?
                 </h3>
-                
-                <form action="" style="height: 65% ; width: 90%; background-color:#290001; margin-left: 6%; border-radius: 100px; display: flex; flex-direction: column; align-items: center;" onclick="checkfield()">
+                 <!-- the  form starts  -->
+                <form  style="height: 65% ; width: 90%; background-color:#290001; margin-left: 6%; border-radius: 100px; display: flex; flex-direction: column; align-items: center;">
+                    <!-- give the h3 heading  with styling  -->
                 <h3 style="color: #FDEEDC; font-size: 25px; margin: 20px 0px  0 0px;">Provide your information:-</h3>
+                 <!-- give one pera  -->
                 <p style="color: #FDEEDC;  margin: 25px 20px 10px 55px; word-spacing: 2px;  font-size: 18px;">
                     Use the selector to select your favorite selection from various charitable options, such as clothing, electronics, furniture, and household necessities.
                 </p>
 
-
+                 <!-- give  input div  -->
                 <div class="input-name-2">
-                    <label for="input name-2">  Name:-</label> 
-                    <input type="text" placeholder="Full Name" id="Firstname">
-                    <p id="error1" class="name massage">Please enter a valid Email.</p>
+                     <!-- lable  -->
+                    <label for="Firstname1">  Name:-</label> 
+                     <!-- input type text  for name  -->
+                    <input type="text" placeholder="Full Name" id="Firstname1">
+                    
                    </div>
-                   
+                
+                     <!-- div or selection for the charity  items that  people want ot donate  -->
                    <div class="select-charity-items" style="margin-right: 47.5%;">
+                     <!-- lable  -->
                     <label for="select-charity-items">Charity Items:-</label>
-                    <select name="charity-items" style=" color: #FDEEDC;background-color: transparent;">
+                     <!-- section  for charity items  -->
+                    <select name="charity-items" id="select-charity-items" style=" color: #FDEEDC;background-color: transparent;">
+                        <!-- options  for charity items  -->
                         <option value="electronics" selected  style="background-color: gray; border: none;">Electronics</option>
-                        <option value="Furniture"style="background-color: black;">Furniture</option>
-                        <option value="clothes"style="background-color: black;">clothes</option>
-                        <option value="other Essentials"style="background-color: black;">other Essentials</option>
+                        <option value="Furniture" style="background-color: black;">Furniture</option>
+                        <option value="clothes" style="background-color: black;">clothes</option>
+                        <option value="other Essentials" style="background-color: black;">other Essentials</option>
                      </select>
                    </div>
+                    <!-- selection  div ends  -->
 
-                   
+                    <!-- give pera  -->
                    <p style="color: #FDEEDC; margin: 40px 0 20px 0; text-align: start; padding: 0px 10px 10px 5px;font-size:18px;">
                     Please respond to us with the specific item you plan to donate.<br>we provide you space below to  write.</p>
 
 
+                      <!-- give div for  some space  for people to write  specific  items  that they want to donate  -->
                     
                 <div class="input-name-2">
-                    <label for="input name-2"> Charity Items:-</label> 
-                    <input type="text" placeholder="other items ">
+                     <!-- lable  -->
+                    <label for="input_name-2"> Charity Items:-</label>
+                     <!-- input type text   -->
+                    <input type="text" placeholder="other items " id="input_name-2">
                    </div>
+                    <!-- div ends  -->
     
 
-
+                    <!-- button for submit the form. -->
                    <button style=" height: 40px; width: 100px; padding: 10px 10px 10px 10px; background: transparent; color: #FDEEDC; border: 2px solid #FDEEDC; border-radius: 20px; margin-top: 20px; cursor: pointer;"> Donate </button>
                 </form>
+                <!--  the form ends  -->
             </div>
+             <!-- the right div ends  -->
+
     
             </div>
+             <!-- the div for form  which is outer div ends here  -->
         </div>
-    </div>
+         <!-- the main div for form  ends  -->
+  
 
   
 
@@ -427,7 +494,7 @@
        <div class="Row"> 
         <!-- column for logo and address  -->
            <div class="col"> 
-               <img src="../Footer logo img.png"  class="footer-logo">
+               <img src="/Footer_logo_img.png"  alt="footer logo img " class="footer-logo">
     <!-- address  -->
                <h3> Address:</h3>
    
@@ -467,7 +534,7 @@
                 <li><a href="underConstruction.html"> Jobs</a></li>
                 <li><a href="./login.html"> Sign In / Register</a></li>
             </ul>
-               </ul>
+              
            </div>
             <!-- div ends her for col 3  -->
              <!-- col 5 starts here  -->
@@ -487,7 +554,7 @@
            <hr>
             <!-- col  5 for img  -->
            <div class="col col-5">
-               <img src="../Footer Bg img.png" alt=" footer img">
+               <img src="/Footer_Bg_img.png" alt=" footer img">
            </div>
        </div> 
         <!-- copyright  part   -->

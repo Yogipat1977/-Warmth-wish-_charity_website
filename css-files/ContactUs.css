@@ -172,35 +172,27 @@ transform: scaleX(1);
   align-items: end;
   flex-direction:column ;
 }
-.Customer-services-Inner-Div-2 h3 
-{
-  margin-top: 25px;
-  margin-left: 18px;
-  padding: 0;
-}
-.Customer-services-Inner-Div-2 h4
-{
 
-  margin-left: 35px;
-  padding: 0;
-}
-.Customer-services-Inner-Div-2 h3::before
+
+.Customer-services-Inner-Div-2
 {
-  content: '»';
+  width: 40%;
+  padding: 2%;
+}
+.Customer-services-Inner-Div-2 ul .li_main
+
+{
+  margin-bottom: 25px;
+}
+.inner-ul_1 h3,.inner-ul_2 h3, .inner-ul_3 h3
+{
+  margin-bottom: 15px;
+}
+.inner-ul_1 p,.inner-ul_2 p, .inner-ul_3 p{
+  margin-bottom: 5px;
 }
 
-.Customer-services-Inner-Div-2 p
-{
-  margin-top: 10px;
-  margin-left: 35px;
-  padding-bottom: 5px ;
-}
-.Customer-services-Inner-Div-2 a
-{
-  padding: 10px;
-    margin-left: 30px;
-    color: #293040;
-}
+
 .Customer-services-Inner-Div-3
 {
   position: absolute;

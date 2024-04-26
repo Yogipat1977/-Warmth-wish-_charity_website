@@ -13,6 +13,9 @@ const toggleSearch = (search, button) =>{
  toggleSearch('search-bar', 'Search-btn');
 
 
+
+
+ 
 window.onscroll = function() {stickyNavbar()};
 
 var navbar = document.getElementById("navbar");
@@ -28,6 +31,24 @@ function stickyNavbar()
     navbar.classList.remove("fixed");
   }
 }
+
+
+// Add scroll event listener to the window
+window.addEventListener('scroll', function() 
+{
+  var navbar = document.getElementById('navbar');
+  
+  // Check if the navbar touches the top of the window
+  if (window.scrollY > 159) 
+  {
+      navbar.classList.add('blur'); // Add blur class to navbar
+  } else
+   {
+      navbar.classList.remove('blur'); // Remove blur class from navbar
+  }
+});
+
+
 
 
 
@@ -58,20 +79,10 @@ divs.forEach(div => {
 });
 
 
-// Add scroll event listener to the window
-window.addEventListener('scroll', function() 
-{
-  var navbar = document.getElementById('navbar');
-  
-  // Check if the navbar touches the top of the window
-  if (window.scrollY > 159) 
-  {
-      navbar.classList.add('blur'); // Add blur class to navbar
-  } else
-   {
-      navbar.classList.remove('blur'); // Remove blur class from navbar
-  }
-});
+
+
+
+
 
 
 

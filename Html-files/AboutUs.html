@@ -7,14 +7,13 @@
      <!-- main  css link  -->
     <link rel="stylesheet" href="../Index.css">
      <!-- about us css link  -->
-     <link rel="stylesheet" href="../css-files/About us.css">
+     <link rel="stylesheet" href="/css-files/AboutUs.css">
    <!-- link for google fonts  -->
 <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"> <!-- link for icons -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />    <!-- link for google fonts  -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" >    <!-- link for google fonts  -->
 <!-- link for the libarary that i have used for the simple animations at  some places  -->
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> 
-</head>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" > 
 </head>
 <body>
     
@@ -39,14 +38,14 @@
             <!-- div for search bar  -->
             <div class="container">
                 <!-- i add form to with an id and class to give styling and java script to toggle the search bar  -->
-                <form action class="search" id="search-bar">
+                <form  class="search" id="search-bar">
                     <!-- add input for  sear input  -->
                     <input type="Search" placeholder="Search Here..."
                         class="Search-input">
                     <!-- add div for search and  close icons  -->
                     <div class=" Search-Button" id="Search-btn">
                         <i class="ri-search-2-line search-icon"></i>
-                        <i cass="ri-close-line search-close"></i>
+                        <i class="ri-close-line search-close"></i>
                     </div>
                     <!-- div end here  -->
                 </form>
@@ -65,17 +64,20 @@
         </div>
         <!-- div for navbar ends here  -->
    
-  
+          <!-- the intro div for about us start for here  -->
                 <div class="Introduction_div">
-
-                            <div class=" Introduction_div-Inner_div_1">
+                     <!-- inner div 1 to give infromation   -->
+                            <div class=" Introduction_div-Inner_div_1"> 
+                                <!-- heading  -->
                                 <h2> Who are we ?</h2>
+                                 <!-- pera  -->
                                     <P>
                                     Warmth Wish is more than simply a charitable organization; we are a ray of hope
                                      committed to helping people and families in need via our household goods donation programs.
                                      Our aim is to create a sense of warmth and stability in our communities by giving those
                                      going through poverty access to basic household necessities. 
                                     </P>
+                                     <!-- pera 2  -->
                                     <p>
                                         One donation at a time, we hope to significantly improve the lives of others via
                                          our dedication to kindness and giving.Join us by accepting this objective, contributing to it,
@@ -83,52 +85,65 @@
                                     </p>
 
                             </div>
+                              <!-- created inner div 2 and 3 to put the img  with fade left animation , overlep the div 3 on div2  where div 2 has no img -->
                             <div class="Introduction_div-Inner_div_2"   data-aos="fade-left"  data-aos-duration="1150"></div>
                             <div class="Introduction_div-Inner_div_3"  data-aos="fade-left"  data-aos-duration="1150"></div>
                             
                    </div>
 
 
-
+  <!-- the mission statement div starts from here -->
         <div class="Missinon_statement-Div">
+             <!-- heading  -->
             <h2> Our Mission</h2>
+             <!-- inner div for infromation  -->
             <div class="Missinon_statement-Inner-Div-1">
+                 <!-- pera  -->
                 <p>
                      Our goal is to improve the lives of people and families in our community by
                      spreading love and care via our household items charity programs. It is a straightforward 
                      but deep objective.
                </p>
+                <!-- pera 2  -->
                <p>
                 We have a strong commitment to environmental sustainability in addition to community welfare.
                  By encouraging recycling and reuse behaviors, we actively contribute to trash reduction 
                  through our efforts.
                </p>
-            </div>
-             
+            </div> 
+             <!-- info div ends  -->
+              <!-- inner  div 2 and 3  to give img  -->
             <div class="Missinon_statement-Inner_div_2" data-aos="fade-left"  data-aos-duration="1150"></div>
-            <div class="Missinon_statement-Inner_div_3"data-aos="fade-left"  data-aos-duration="1150"></div>
+            <div class="Missinon_statement-Inner_div_3" data-aos="fade-left"  data-aos-duration="1150"></div>
         </div>
 
 
+         <!-- what we do  div starts  -->
         <div class="what_we_do-div">
+             <!-- heading  -->
             <h2>What we do ?</h2> 
+              <!-- inner div for information  -->
             <div class="What_we_do-Inner-Div-1">
+                 <!-- pera 1  -->
                 <p>
                     We guarantee the timely acceptance and supply of different household necessities to 
                     individuals who require them. Our dedication is based on providing useful assistance, 
                     including furniture, gadgets, everyday appliances, and household necessities, to people and families 
                     who are going through difficult times.
                </p>
+                <!-- pera 2  -->
                <p>
                 We offer multiple services aimed at simplifying tasks for individuals and promote various events
                  to encourage community involvement in helping others
                    
                </p>
             </div>
-
+             <!-- inner div ends  -->
+             <!-- inner div 2 and 3 for img  -->
                 <div class="What_we_do-Inner-Div-2" data-aos="fade-right"  data-aos-duration="1150"></div>
                 <div class="What_we_do-Inner-Div-3" data-aos="fade-right"  data-aos-duration="1150"></div>
         </div>
+         <!-- what we do div ends here  -->
 
 
  <!-- footer starts here  -->
@@ -137,7 +152,7 @@
        <div class="Row"> 
         <!-- column for logo and address  -->
            <div class="col"> 
-               <img src="../Footer logo img.png"  class="footer-logo">
+               <img src="/Footer_logo_img.png"  alt="footer logo img" class="footer-logo">
     <!-- address  -->
                <h3> Address:</h3>
                <p>University of east london,</p>
@@ -196,7 +211,7 @@
            <hr>
             <!-- col  5 for img  -->
            <div class="col col-5">
-               <img src="../Footer Bg img.png" alt=" footer img">
+               <img src="/Footer_Bg_img.png" alt=" footer img">
            </div>
        </div> 
         <!-- copyright  part   -->

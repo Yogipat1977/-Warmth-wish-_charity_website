@@ -164,8 +164,7 @@ position: absolute;
     font-size: 50px;
     background-image: url('./wood\ img.jpg'); 
     background-size: cover;
-    background-clip: text; 
-    -webkit-background-clip: text; 
+    background-clip: text;  
     color: transparent; 
     text-shadow: 1px 1px  2px #000000;
   }
@@ -498,7 +497,7 @@ article a:hover::after
  position: relative;
  margin-top: 10%;
  margin-left: -40px;
- font-family: Trebuchet,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+ font-family:'Trebuchet','Trebuchet MS','Lucida Grande','Lucida Sans Unicode','Lucida Sans,Tahoma','sans-serif';
  color: #FFE6A7;
  text-align: right;
  font-size: 45px;
@@ -517,7 +516,7 @@ article a:hover::after
   display: flex;
   margin-top: 10%;
   text-align: center;
-  margin-bottom: 10;
+  margin-bottom: 10px;
   justify-content: center;
   font-size: 20px;
   color: #FFE6A7;   
@@ -656,8 +655,8 @@ section
  }
 
  
-#Services_heading h1::before,
-#Services_heading h1::after
+#Services_heading h2::before,
+#Services_heading h2::after
  {
   content: '';
   position: absolute;
@@ -666,12 +665,12 @@ section
   height: 2.5px; /* Thickness of the lines */
   background-color: #99582a; 
 }
-#Services_heading h1::before
+#Services_heading h2::before
 {
   left: 0;
 }
 
-#Services_heading h1::after
+#Services_heading h2::after
 {
   right: 0;
 }
@@ -694,7 +693,7 @@ section
   display: flex;
   align-items: center;
  font-size:20px;
- font-family:Trebuchet,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+ font-family:'Trebuchet','Trebuchet MS','Lucida Grande','Lucida Sans Unicode','Lucida Sans,Tahoma','sans-serif';
 }
 
  .div_1
@@ -1072,7 +1071,7 @@ section
 {
   position: relative;
   text-align: center;
-  font-family:Trebuchet,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    margin-top: 30px;
   font-size: 20px;
   font-weight: 600;
@@ -1128,12 +1127,8 @@ section
 {
   background: linear-gradient(rgba(255, 105, 5, 0.4), rgba(255,0,0,0.4)),url(./volunteer_img.jpg);
   background-size: cover; 
-  
   transform:scale(1.09);
-  .tinttt{
-    background-color: rgba(200, 50, 0, 0.5);
-    background-blend-mode: multiply;
-  }
+
 }
 .Awareness_Events:hover
 {
@@ -1495,7 +1490,7 @@ font-weight: 500;
 {
   text-align: start;
   margin-top: 10px;
-  font-size: 20;
+  font-size: 18px;
   color: #DBCBBD;
 }
 .container-1 a, .container-2 a

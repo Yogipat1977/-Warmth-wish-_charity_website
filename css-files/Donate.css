@@ -1,4 +1,5 @@
 *{
+  /* Applying styles to all elements */
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -10,6 +11,7 @@ background-color: #FDEEDC;
 
 .div-1
 {
+   /* Styling for div1 element */
   background-color: #F4E0B9;
   display: flex;
   justify-content: space-between;
@@ -17,14 +19,14 @@ background-color: #FDEEDC;
   width: 100%;
   padding: 1%;
 }
-
+  /* give some style to the ancor  */
 .div-1 a
 {
   height: 130px;
   width: 200px;
 }
 
-
+/* give style to div1 image */
  .div-1 img
 {
   height: 130px;
@@ -32,6 +34,7 @@ background-color: #FDEEDC;
   margin-bottom: 20px;
    cursor: pointer;
 } 
+/* give some style to the btn class which is a container for login and sign in link  */
 
 .btn
 {
@@ -45,6 +48,7 @@ flex-direction: row;
 
 }
 
+   /* styling for btn ancors  */
    
 .btn a
 {
@@ -63,6 +67,8 @@ position: relative;
    cursor: pointer;
    transition: color 300ms ease;
 }
+/* give before psudo element  */
+
 .btn a::before
 {
 content: '';
@@ -81,12 +87,16 @@ transition: transform 300ms ease-in-out;
 }
 
 
+/* give our hover animation to before  */
 
 .btn a:hover::before
 {
 transform: scaleX(1);
 }
+/* give  hover on ancor  */
+
 .btn a:hover
+
 {
  color: #FDEEDC;
 }

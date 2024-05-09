@@ -1,4 +1,5 @@
 *{
+  /* Applying styles to all elements */
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -7,9 +8,9 @@ body
 {
 background-color: #FDEEDC;
 }
-
 .div-1
 {
+   /* Styling for div1 element */
   background-color: #F4E0B9;
   display: flex;
   justify-content: space-between;
@@ -17,14 +18,14 @@ background-color: #FDEEDC;
   width: 100%;
   padding: 1%;
 }
-
+  /* give some style to the ancor  */
 .div-1 a
 {
   height: 130px;
   width: 200px;
 }
 
-
+/* give style to div1 image */
  .div-1 img
 {
   height: 130px;
@@ -32,6 +33,7 @@ background-color: #FDEEDC;
   margin-bottom: 20px;
    cursor: pointer;
 } 
+/* give some style to the btn class which is a container for login and sign in link  */
 
 .btn
 {
@@ -45,6 +47,7 @@ flex-direction: row;
 
 }
 
+   /* styling for btn ancors  */
    
 .btn a
 {
@@ -63,6 +66,8 @@ position: relative;
    cursor: pointer;
    transition: color 300ms ease;
 }
+/* give before psudo element  */
+
 .btn a::before
 {
 content: '';
@@ -81,16 +86,20 @@ transition: transform 300ms ease-in-out;
 }
 
 
+/* give our hover animation to before  */
 
 .btn a:hover::before
 {
 transform: scaleX(1);
 }
+/* give  hover on ancor  */
+
 .btn a:hover
+
 {
  color: #FDEEDC;
 }
-
+/* introduction div styling  */
 .our-services-Introduction-div
 {
 
@@ -104,13 +113,14 @@ transform: scaleX(1);
   clip-path: polygon(0% 0%, 100.1% 0%, 100% 100%, 0% 76.8%);
 
 }
+ /* heading styling  */
 .our-services-Introduction-div h1
 {
    font-size: 50px;
    color:#F4E0B9;
    margin-left: 20%;
 }
-
+ /* give peragraph styling  */
 .our-services-Introduction-div p
 {
   font-size: 17px;
@@ -120,6 +130,7 @@ transform: scaleX(1);
   margin-left: 10%;
   margin-bottom: 5%;
 }
+ /* image styling  */
 .our-services-Introduction-div img
 {
   height: 250px;
@@ -128,6 +139,7 @@ transform: scaleX(1);
   right: 0;
   margin-right: 20%;
 }
+ /* give image  dive styling  */
 .our-services-Intro-img
 {
   position: absolute;
@@ -140,7 +152,7 @@ transform: scaleX(1);
   background-size: cover;
 }
 
-
+ /* give styling to  main div  */
   .our-services_main_div
   {
     position: relative;
@@ -152,6 +164,7 @@ transform: scaleX(1);
     place-items: center;
     margin-top: 5%;
   }
+   /* give styling to hr  */
   .our-services_main_div hr
   {
     position:absolute;
@@ -162,13 +175,15 @@ transform: scaleX(1);
     width: 0%; 
 
   }
-
+ /* give styling to the table 
+ */
   table
 
   {
     position: relative;
   }
 
+   /* give styling to the image  */
 .our-services_main_div .img-1
 {
   position:relative;
@@ -179,7 +194,7 @@ transform: scaleX(1);
   background-color: #290001;
   border-radius: 50%;
 }
-
+ /* give styling to the  image  */
 .our-services_main_div .img-2
 {
   position:relative;
@@ -190,6 +205,8 @@ transform: scaleX(1);
   background-color: #290001;
   border-radius: 50%;
 }
+ /* give styling to the  image  */
+
 .our-services_main_div .img-3
 {
   position:relative;
@@ -200,6 +217,8 @@ transform: scaleX(1);
   background-color: #290001;
   border-radius: 50%;
 }
+ /* give styling to the  image  */
+
 .our-services_main_div .img-4
 {
   position:relative;
@@ -210,6 +229,8 @@ transform: scaleX(1);
   background-color: #290001;
   border-radius: 50%;
 }
+ /* give styling to the  image  */
+ 
 .our-services_main_div .img-5
 {
   position:relative;
@@ -221,6 +242,7 @@ transform: scaleX(1);
   border-radius: 50%;
 }
 
+ /* give styling to the left container  */
 .our-services_pera_left-div
 {
   position: absolute;
@@ -233,8 +255,8 @@ transform: scaleX(1);
   width: 45%;
   padding: 0 6% 0 6%;
   text-align: left;
- 
 }
+/*  give styling to the right container  */
 .our-services_pera_right-div
 {
   position: absolute;
@@ -248,7 +270,7 @@ transform: scaleX(1);
   padding: 0 6% 0 6%;
  
 }
-
+ /* give styling to the paragraphs */
  .pera-1, .pera-3, .pera-4, .pera-2, .pera-5
  {
 
@@ -260,20 +282,20 @@ transform: scaleX(1);
   width: 450px;
   margin-bottom: 18%;
  }
-
+ /* give styling to heading  */
 .h_1
 {
    position: relative; 
    bottom: 10%; 
  
 }
-
+ /* give peragraph  */
 .p_1
 {
   position: relative;
   bottom: 10%;
 }
- 
+  /* give  styling to the  ancor  */
  .a-1
  {
   position: relative;
@@ -289,6 +311,7 @@ transform: scaleX(1);
   z-index: 1;
   transition: color 300ms ease;
  }
+  /* give before element styling  */
  .a-1::before
  {
   content: '';
@@ -305,26 +328,30 @@ transform: scaleX(1);
   transform: scaleX(0);
   transition: transform 300ms ease-in-out;
  }
+  /* give hover effect on befor element  */
  .a-1:hover::before
  {
   transform: scaleX(1);
  }
+  /* give hover effect on ancor  */
  .a-1:hover
  {
   color: #F4E0B9;
  }
+  /* heading styling  */
 .h_2
 {
    position: relative; 
    top: 10%;
   
 }
-
+/* give  peragraph styling  */
 .p_2
 {
   position: relative;
   top: 4%;
 }
+ /* give ancor styling  */
 
 .a-2
 {
@@ -341,6 +368,7 @@ transform: scaleX(1);
   z-index: 1;
   transition: color 300ms ease;
 }
+ /* give before element  */
 .a-2::before
 {
  content: '';
@@ -357,40 +385,44 @@ transform: scaleX(1);
  transform: scaleX(0);
  transition: transform 300ms ease-in-out;
 }
+ /* give hover effect  */
 .a-2:hover::before
 {
  transform: scaleX(1);
 }
+ /* give hover effect on ancor  */
 .a-2:hover
 {
  color: #F4E0B9;
 }
 
+ /* gove heading  styling  */
 .h_3
 {
    position: relative; 
   bottom: 8%;
 }
-
+ /* give paragraph styling  */
 .p_3
 {
   position: relative;
   bottom: 3%;
 }
 
-
+ /* give heading styling  */
 .h_4
 {
    position: relative; 
    top: 15%;
   
 }
-
+ /* give paragraph styling  */
 .p_4
 {
   position: relative;
   margin-top: 5%;
 }
+ /* give heading styling  */
 .h_5
 {
    position: relative; 
@@ -398,13 +430,14 @@ transform: scaleX(1);
  
 }
 
-
+ /* give peragraph styling  */
 .p_5
 {
   position: relative;
  top: 14%;
 
 } 
+ /* give ancor styling  */
 .a-5
 {
   position: relative;
@@ -421,6 +454,7 @@ z-index: 1;
 transition: color 300ms ease;
 
 }
+ /* give before element  */
 .a-5::before
 {
  content: '';
@@ -437,10 +471,12 @@ transition: color 300ms ease;
  transform: scaleX(0);
  transition: transform 300ms ease-in-out;
 }
+ /* give hover effect  */
 .a-5:hover::before
 {
  transform: scaleX(1);
 }
+ /* give hover effect on ancor  */
 .a-5:hover
 {
  color: #F4E0B9;

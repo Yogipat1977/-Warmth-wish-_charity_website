@@ -1,4 +1,5 @@
 *{
+  /* Applying styles to all elements */
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -10,6 +11,7 @@ background-color: #FDEEDC;
 
 .div-1
 {
+   /* Styling for div1 element */
   background-color: #F4E0B9;
   display: flex;
   justify-content: space-between;
@@ -17,14 +19,14 @@ background-color: #FDEEDC;
   width: 100%;
   padding: 1%;
 }
-
+  /* give some style to the ancor  */
 .div-1 a
 {
   height: 130px;
   width: 200px;
 }
 
-
+/* give style to div1 image */
  .div-1 img
 {
   height: 130px;
@@ -32,6 +34,7 @@ background-color: #FDEEDC;
   margin-bottom: 20px;
    cursor: pointer;
 } 
+/* give some style to the btn class which is a container for login and sign in link  */
 
 .btn
 {
@@ -45,6 +48,7 @@ flex-direction: row;
 
 }
 
+   /* styling for btn ancors  */
    
 .btn a
 {
@@ -63,6 +67,8 @@ position: relative;
    cursor: pointer;
    transition: color 300ms ease;
 }
+/* give before psudo element  */
+
 .btn a::before
 {
 content: '';
@@ -81,17 +87,20 @@ transition: transform 300ms ease-in-out;
 }
 
 
+/* give our hover animation to before  */
 
 .btn a:hover::before
 {
 transform: scaleX(1);
 }
+/* give  hover on ancor  */
+
 .btn a:hover
+
 {
  color: #FDEEDC;
 }
-
-
+  /* give introductin div styling  */
   .ourAssortments-intro_div
   {
     position: relative;
@@ -102,6 +111,7 @@ transform: scaleX(1);
     clip-path: polygon(0% 0%, 100.1% 0%, 100% 100%, 0% 85.5%);
   }
 
+   /* give h1 styling  */
  .ourAssortments-intro_div h1
   {
  
@@ -110,10 +120,12 @@ transform: scaleX(1);
 
 }
 
+ /* give styling to the span element  */
 .ourAssortments-intro_div h1 span
 {
      color:#99582A;
 }
+ /* give peragraph  styling  */
 .ourAssortments-intro_div p
 {
  
@@ -124,6 +136,7 @@ transform: scaleX(1);
     padding: 0 0 0 10%;
 
 }
+ /* give image styling  */
 .ourAssortments-intro_div img
 {
   position: absolute;
@@ -134,7 +147,7 @@ transform: scaleX(1);
   margin: 2% 10% 0 0;
    border-radius: 60% 40% 48% 52% / 33% 44% 56% 67%;
 }
-
+/* give styling to two main div  */
 .our_assortments-main-div-1, .our_assortments-main-div-2
 {
 
@@ -154,12 +167,14 @@ flex-direction: column;
   height: 700px;
    width: 100%;
 }
+ /* give  styling to the heading div  */
 .our_assortments-main-div-1 .p_heading
 {
   margin-top: 6%;
   font-size: 45px;
   text-align: center;
 }
+ /* give styling to the  paragraph  */
 .our_assortments-main-div-1 #p_topic
 {
    font-size: 20px;
@@ -169,7 +184,7 @@ flex-direction: column;
    text-align: center;
 }
 
-
+ /* give styling to the image div  */
 .our-assortments-img-div
 {
   height:300px ;
@@ -180,7 +195,7 @@ flex-direction: column;
  justify-content: space-evenly;
 
 }
-
+ /* give styling to the three block div  */
 .block_1, .block_2, .block_3
 {
   height: 200px;
@@ -194,6 +209,7 @@ flex-direction: column;
 
   
 }
+ /* give styling to the h5  */
 .block_1 h5, .block_2 h5, .block_3 h5
 {
   padding: 10px;
@@ -201,6 +217,7 @@ flex-direction: column;
   color: #290001;
   z-index: 1000;
 }
+ /* give styling ot the image  */
 .block_1 img, .block_2 img, .block_3 img
 {
   position: absolute;
@@ -211,7 +228,7 @@ flex-direction: column;
 
 }
 
-
+ /* give styling to the  horizontal line  */
 .horizontal-line 
 {
   position: absolute;
@@ -220,7 +237,7 @@ flex-direction: column;
 
 }
 
-
+ /* give styling to the peragraph styling  */
 .our_assortments-main-div-2 .p_heading
 {
   margin-top: 2%;
@@ -228,12 +245,14 @@ flex-direction: column;
   width: 80%;
   text-align: center;
 }
+/* give styling to the  div  */
 .our_assortments-main-div-2 div
 {
   display: flex;
   width: 70%;
 }
 
+ /* give styling to the peragraph  */
 .our_assortments-main-div-2 #p_topic-1
 {
    font-size: 20px;
@@ -243,7 +262,8 @@ flex-direction: column;
  
    
 }
-
+ /* give styling to the peragraph  */
+ 
 
 .our_assortments-main-div-2 #p_topic-2
 {

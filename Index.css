@@ -1,17 +1,16 @@
-body  /* Styling for the body element */
+body 
 {
   
-  background-color: HSL(222, 100%, 99%); /* Background color */
-  overflow-x: hidden; /* Hide horizontal overflow */
+  background-color: HSL(222, 100%, 99%); 
+  overflow-x: hidden; 
 }
 
 * {
   /* Applying styles to all elements */
-  box-sizing: border-box;/* Including padding and border in element's total width and height */
-  padding: 0;  /* Setting padding to 0 */
-  margin: 0;/* Setting margin to 0 */
+  box-sizing: border-box;
+  padding: 0; 
+  margin: 0;
 }
-
 .div1 
  {
   /* Styling for div1 element */
@@ -24,7 +23,7 @@ body  /* Styling for the body element */
   padding-bottom: 3%;
 
 }
-
+  /* give some style to the ancor  */
 .div1 a 
 {
   height: 130px;
@@ -32,14 +31,14 @@ body  /* Styling for the body element */
   margin-top: 10px;
 
 }
-
+  /* give style to div1 image */
 .div1 img
  {
 
   height: 100%;
  width: 150%;
 }
-
+/* give some style to the btn class which is a container for login and sign in link  */
 .btn
  {
  
@@ -52,7 +51,7 @@ body  /* Styling for the body element */
 
 }
 
-     
+     /* styling for btn ancors  */
  .btn a
  {
   position: relative;
@@ -70,6 +69,7 @@ body  /* Styling for the body element */
      cursor: pointer;
      transition: color 300ms ease;
  }
+  /* give before psudo element  */
  .btn a::before
  {
 content: '';
@@ -88,15 +88,17 @@ position: absolute;
  }
 
 
- 
+ /* give our hover animation to before  */
  .btn a:hover::before
  {
   transform: scaleX(1);
  }
+  /* give  hover on ancor  */
  .btn a:hover
  {
    color: #FDEEDC;
  }
+  /* styling on main div 2  */
   .div2 
   {
       background-color: #DBCBBD;
@@ -108,8 +110,7 @@ position: absolute;
      
   }
 
-  
-
+/* style all ancor to look like a button  */
   .div2 a
   {
       margin: 5px;  
@@ -126,6 +127,7 @@ position: absolute;
       color:#290001;
   }
 
+   /* give before elements and style it */
   .div2 a::before
     {
       content: ''; 
@@ -138,10 +140,12 @@ position: absolute;
       transition: width 0.3s ease, color 0.3s ease; 
       
     }
+     /* give bottom line animation when hover it  */
   .div2 a:hover::before 
   {
       width: 100%;  
   }
+   /* give fixed class to run java script when scroll up the navbar stick at the top */
   .fixed 
   {
     position: fixed;
@@ -149,13 +153,14 @@ position: absolute;
     width: 100%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
   }
-
+ /* also add blur effect to the navbar  wen the offset hight is 0  */
   .blur
    {
     background-color:rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(8px);
     z-index: 100;
    }
+    /* give some styling to the heanding on the top   */
   .h1-1
   {
     margin: 0;
@@ -167,7 +172,8 @@ position: absolute;
     background-clip: text;  
     color: transparent; 
     text-shadow: 1px 1px  2px #000000;
-  }
+  } 
+   /* give some styling to the donate button  */
   .div2 #donateBtn
   {
      position: absolute;
@@ -183,10 +189,12 @@ position: absolute;
     opacity: 1;
     transition: 0.3s;
   }
+  /* give hover effect to the donate button */
   .div2 .donateBtn:hover 
   {
     opacity: 0.6;
   }
+   /* this is the styling for search container  */
   .container
   {
     height: 50px;
@@ -197,8 +205,8 @@ position: absolute;
     position: absolute;
     margin-left: 13%;
     left: 0;
-   
   }
+  /* give  a class search to the  form  element and style it  */
   .search
   {
     position: relative;
@@ -210,10 +218,9 @@ position: absolute;
     border-radius: 4rem;
     padding: 5.5px;
     transition: width 0.5s cubic-bezier(0.9, 0, 0.3, 0.9);
-
   }
 
-
+  /* style an input element in form  */
   .Search-input
   {
     border: none;
@@ -227,7 +234,7 @@ position: absolute;
     background-color: #DBCBBD;
     transition: opacity 1.5s;
   }
-
+ /* styling search button conatiner  */
   .Search-Button
   {
     height: 35px;
@@ -244,40 +251,47 @@ position: absolute;
     transition: transform 0.6s cubic-bezier(0.9, 0, 0.3, 0.9);
 
   }
+   /* style search icon and close icon  */
   .search-icon, .search-close
   {
     color: #F4E0B9;
     font-size: 18px;
     position: absolute;
   }
+  /* give opacity 0 for close icon  */
   .search-close
   {
     opacity: 0;
   }
-
+  /* add show search class to run java script function and increase the width for search bar  */
   .show-search
   {
     width: 350px;
   }
+  /* give opasity 1 and pointerevents initial  */
   .show-search .Search-input
   {
     opacity: 1;
     pointer-events: initial;
-  }
+  } 
+  /* give tranform to  the icons  when click it  */
   .show-search .search-button
   {
     transform: rotate(90deg);
   }
+   /* opacity zero  when it is not active   */
   .show-search .search-icon 
   {
     opacity: 0;
   }
+   /* opasity 1 when its active */
   .show-search .search-close 
   {
     opacity: 1;
      color: #F4E0B9;
   }
 
+   /* div3 styling  */
 .div3 
 {
   
@@ -287,7 +301,7 @@ position: absolute;
   overflow: hidden;
 }
 
-
+ /* give styling to the  background img  */
 #image-2 
 {
   position: absolute;
@@ -303,6 +317,7 @@ position: absolute;
   opacity: 1;
 }
 
+ /* styling to the inner div  */
 #inner-div
 {
   position: absolute;
@@ -313,12 +328,13 @@ position: absolute;
   float: left;
  
 }
+ /* give styling to header  */
 header
  {
   opacity: 1;
  
 }
-
+/* styling to the div 3 inner div heading  */
 
 .heading
 {
@@ -333,7 +349,7 @@ header
    transform: translate(-50%, calc(-50% + 1em)); 
 }
 
-
+  /* give styling to the article  */
 
 article 
 {
@@ -347,6 +363,7 @@ article
   color: #DBCBBD;
 
 } 
+ /* give style to the pera which is in artical  */
 .p
 {
   position: absolute;
@@ -354,6 +371,7 @@ article
   font: 700;
   font-size: 30px;
 }
+ /* give style to the pera which is in artical  */
 .p-1
 {
   position: relative;
@@ -363,11 +381,12 @@ article
   font-family: Arial, Helvetica, sans-serif;
  
 }
+ /* give style to the pera which is in artical  */
 .p-2
 {
   font-size: 20px;
 }
-
+ /* give styling to the arical ancor  */
 article a
 {
   position: absolute;
@@ -387,11 +406,13 @@ article a
   cursor: pointer;
   transition: color 300ms ease;
 }
+ /* give hover  */
 article a:hover
 {
   color: #290001;
 }
 
+ /* give befor eliment to the article ancor  */
 article a::before
 {
   content:'';
@@ -406,24 +427,28 @@ article a::before
   transform: scaleX(0);
   transition: transform 300ms ease-in-out;
 }
+ /* give hover effect ot the befor element */
 article a:hover::before
 {
    transform: scaleX(1);
    
 }
 
+ /* give after elements  */
 article a::after
 {
   content: '»';
   opacity: 0;
   
 }
+ /* give hover effect to the after element */
 article a:hover::after
 {
   opacity: 1;
   transition: all 0.3s;
 }
 
+/* give styling to the right-hand side div  */
 .inner-div-1
 {
   float: inline-end;
@@ -437,7 +462,7 @@ article a:hover::after
   clip-path: polygon(51.1% 0%, 100% 0%, 100.1% 100.3%, 68.8% 100.3%);
   
 }
-
+ /* give styling to the donate information class  */
 .donate-info
 {
  
@@ -451,6 +476,7 @@ article a:hover::after
   z-index: 2;
   
 }
+/* give styling to the heading */
 .donate-info-heading-1
 {
   color: #FFE6A7;
@@ -461,26 +487,29 @@ article a:hover::after
   padding: 0%;
 }
 
+ /* give before and after elements  */
 .donate-info-heading-1::before,
 .donate-info-heading-1::after
  {
   content: '';
   position: absolute;
   bottom: 0;
-  width: 43%; /* Adjust as needed */
-  height: 2.5px; /* Thickness of the lines */
+  width: 43%; 
+  height: 2.5px; 
   background-color: #99582a; 
 }
+  /* give before element*/
 .donate-info-heading-1::before
 {
   left: 0;
 }
-
+ /* give after element  */
 .donate-info-heading-1::after
 {
   right: 0;
 }
 
+/* give styling to to the symbol that i placed between before and after elements  */
 .donate-info-heading-1 .material-symbols-outlined
 {
   position:absolute;
@@ -491,7 +520,7 @@ article a:hover::after
   color: #FFE6A7;
   font-weight: bold;
 }
-
+/* give styling to the peragraph container   */
 .blockquote-pera
 {
  position: relative;
@@ -504,12 +533,13 @@ article a:hover::after
  font-weight: 900;
 
 }
+ /* give  styling to the peragraph  */
 .blockquote-pera p
 {
    font-size: 35px;
 }
 
-
+/* give styling to the peragraph container   */
 .blockquote-pera-2
 {
   position: relative;
@@ -524,12 +554,12 @@ article a:hover::after
   font-weight: 500;
   margin-left:30px; 
 }
+ /* give styling to the peragraph container   */
 .blockquote-pera-3
 {
   position: relative;
   display: flex;
   text-align: center;
-
   justify-content: center;
   font-size: 20px;
   color: #FFE6A7;   
@@ -537,7 +567,7 @@ article a:hover::after
   font-weight: 500;
   margin-left:50px; 
 }
-
+ /* give styling to the button box  container  */
 .button-boxes
 {
 
@@ -548,7 +578,7 @@ article a:hover::after
   height: 100px;
   width: 40%;
 }
- 
+ /* give styling to ancor   */
 .button-boxes a
 {
   position: relative;
@@ -567,6 +597,7 @@ article a:hover::after
   cursor: pointer;
   transition: color 300ms ease; 
 }
+ /* give befor element to the links  */
 .button-boxes a::before
 {
   content:'';
@@ -581,23 +612,27 @@ article a:hover::after
   transform: scaleX(0);
   transition: transform 300ms ease-in-out;
 }
+ /* give hover effects  */
 .button-boxes a:hover::before
 {
   transform: scaleX(1);
   color: #290001;
 }
+ /* give hover on ancor  */
 .button-boxes a:hover
 {
   color: #290001;
   font-weight: 500;
 
-}
+} 
+ /* give span to the container  */
 .button-boxes span
 {
   position: absolute;
   top:5.7px;
   margin-right:10px;
 }
+/* give style to the div 4  */
 
 .div4
 {
@@ -608,6 +643,7 @@ article a:hover::after
   background-position: 100%;
   position: relative;
 }
+ /* give style to the section  */
 section
  {
    display: flex;
@@ -617,12 +653,13 @@ section
     position: relative;
  
  }
+ /* give transition  to the animate class  */
  
  section .animate
  {
   transition: 1s;
  }
- 
+ /* this is the styling to second section of  our services  */
  .sec-2
  {
    display: flex;
@@ -633,11 +670,12 @@ section
  
  }
  
+  /* give animation to second section  */
  .sec-2 .animate
  {
   transition: 1s;
  }
-
+ /* give services main heading container   */
  #Services_heading
  {
   position: absolute;
@@ -648,33 +686,36 @@ section
   background-color:transparent;
  }
 
+  /* satyling to the heading h1*/
  #Services_heading h1
  {
  width: 100%;
  position: relative;
  }
 
- 
+ /* give befor and after elements  */
 #Services_heading h2::before,
 #Services_heading h2::after
  {
   content: '';
   position: absolute;
   bottom: 0;
-  width: 43%; /* Adjust as needed */
-  height: 2.5px; /* Thickness of the lines */
+  width: 43%; 
+  height: 2.5px;
   background-color: #99582a; 
 }
+
+ /* give left 0  */
 #Services_heading h2::before
 {
   left: 0;
 }
-
+ /* give right 0 to the after  */
 #Services_heading h2::after
 {
   right: 0;
 }
-
+  /* give symbol  to services */
 #Services_heading .material-symbols-outlined
  {
   position: absolute;
@@ -684,6 +725,7 @@ section
   transform: translateY(40%);
   font-weight: bold;
 }
+ /* our services introdction styling  */
 .OurServices_intro
 {
   position: absolute;
@@ -695,7 +737,7 @@ section
  font-size:20px;
  font-family:'Trebuchet','Trebuchet MS','Lucida Grande','Lucida Sans Unicode','Lucida Sans,Tahoma','sans-serif';
 }
-
+ /* give  styling to the subsections of overservices  */
  .div_1
 {
    margin-top: 40px;
@@ -707,6 +749,7 @@ section
 
 }
  
+ /* give styling to the sub-sections image  */
  .div_1 img
  {
     position: relative;
@@ -718,12 +761,14 @@ section
     border-radius: 50%;
  }
 
+  /* give animation to the sub-section  */
    .div_1 .animate
  {
   transform: translateX(-100%);
   opacity: 0;
   border-radius: 0;
  }
+  /* give animation to the sub-section  */
   .div_1.Show-Animation .animate
  {
   transform: translateX(0);
@@ -731,7 +776,7 @@ section
   border-radius: 50%;
  }   
 
-
+/* give styling to the  h3  */
 .div_1 h3
 {
   color: #290001;
@@ -739,6 +784,7 @@ section
  
 }
 
+ /* give some styling to the peragraph  */
 .div_1 p
 {
 
@@ -747,17 +793,20 @@ section
   text-align: center;
 
 }
+ /* give ancor styling to the  sub-section  */
 .div_1  a
 {
 
   color: #290001;
   font-weight: bold;
 }
+ /* give styling to the span element  */
 .div_1  a span
 {
   position: absolute;
   
 }
+/* give  styling to the subsections of overservices  */
 .div_2
 {
   display: inline-flex;
@@ -767,7 +816,7 @@ section
   flex-basis: 25%;
   justify-content:space-around;
 }
- 
+  /* give styling to the sub-sections image  */
 .div_2 img
 {
   position: relative;
@@ -779,26 +828,27 @@ section
    border-radius: 50%;
    
 }
-
+ /* give animation to the sub-section  */
  .div_2 .animate
  {
   transform: scale(0.6);
   opacity: 0;
   border-radius: 0;
  }
+  /* give animation to the sub-section  */
    .div_2.Show-Animation .animate
  {
   transform: scale(1);
   opacity: 1;
   border-radius:50%;
- }    
+ }  
+ /* styling to h3    */
 .div_2  h3
 {
-
  color: #290001;
  margin-top: 40%; 
 }
-
+ /* give  paragraph  styling  */
 .div_2 p
 {
  
@@ -806,16 +856,19 @@ section
   font-size: 15px;
   text-align: center;
 }
+ /* give ancor styling  */
 .div_2 a
 {
   color: #290001;
   font-weight: bold;
 }
+ /* give styling to span  */
 .div_2  a span
 {
   position: absolute;
   
 }
+ /* give  styling to the subsections of overservices  */
 .div_3
 {
   display: inline-flex;
@@ -827,6 +880,7 @@ section
   justify-content: space-around;
 }
  
+   /* give styling to the sub-sections image  */
 .div_3 img
 {
    position: relative;
@@ -838,33 +892,36 @@ section
    border-radius: 50%;
 }
 
+ /* give animation to the sub-section  */
 .div_3 .animate
  {
   transform: translateX(100%);
   opacity: 0;
   border-radius: 0;
  }
+  /* give animation to the sub-section  */
   .div_3.Show-Animation .animate
  {
   transform: translateX(0);
   opacity: 1;
   border-radius: 50%;
  }    
-
+ /* give styling ot hte heading  */
 .div_3 h3 
 {
   
  color: #290001;
  margin-top: 40%; 
 }
-
+ /* give paragraph styling  */
 .div_3 p
 {
  
   font-weight: 600;
   font-size: 15px;
   text-align: center;
-}
+} 
+/* give ancor styling  */
 .div_3 a
 {
 
@@ -872,11 +929,13 @@ section
   font-weight: bold;
 }
 
+/* give styling to  span  */
 .div_3  a span
 {
   position: absolute;
   
 }
+  /* give  styling to the subsections of overservices  */
 .div_4
 {
  
@@ -887,19 +946,21 @@ section
   margin-bottom: 20px;
   justify-content: space-evenly;
 }
-
+ /* give animation to the sub-section  */
 .div_4 .animate
  {
   transform: translateY(100%);
   opacity: 0;
   border-radius: 0;
  }
+  /* give animation to the sub-section  */
   .div_4.Show-Animation .animate
  {
   transform: translateX(0);
   opacity: 1;
   border-radius: 50%;
  }
+   /* give styling to the sub-sections image  */
 .div_4 img
 {
   width: 160px;
@@ -910,6 +971,7 @@ section
   place-items: center;
   border-radius: 50%;
 }
+ /* peragraph styling  */
 .div_4 p
 {
 
@@ -917,23 +979,25 @@ section
   font-size: 15px;
   text-align: center;
 }
+/* heading styling  */
 .div_4 h3
 {
   color: #290001;
   margin-bottom: 15px;
 }
+ /* ancor styling  */
 .div_4 a
 {
   color: #290001;
   font-weight: bold;
 }
+ /* span styling  */
 .div_4  a span
 {
   position: absolute;
   
 }
-
-
+  /* give  styling to the subsections of overservices  */
 .div_5
 {
   display: inline-flex;
@@ -944,20 +1008,21 @@ section
    justify-content: space-evenly;
 
 } 
-
+ /* give animation to the sub-section  */
 .div_5 .animate
  {
   transform: translateY(100%);
   opacity: 0;
   border-radius: 0;
  }
+  /* give animation to the sub-section  */
   .div_5.Show-Animation .animate
  {
   transform: translateX(0);
   opacity: 1;
   border-radius: 50%;
  }
-
+   /* give styling to the sub-sections image  */
  .div_5 img
 {
   
@@ -969,12 +1034,13 @@ section
    border-radius: 50%;
 } 
 
+ /* give heading styling  */
 .div_5 h3
 {
   margin-bottom: 10px;
  color: #290001;
 } 
-
+ /* give  paragraph styling  */
 .div_5 p
 {
  
@@ -982,17 +1048,19 @@ section
   font-size: 15px;
   text-align: center;
 } 
-
+ /* ancor styling  */
 .div_5 a
 {
   color: #290001;
   font-weight: bold;
 }
+ /* give span styling  */
 .div_5  a span
 {
   position: absolute;
   
 }
+ /* div 5 styling  */
 .div5
 {
   height:950px;
@@ -1003,6 +1071,7 @@ section
   justify-content: space-evenly;
   flex-direction: column;
 }
+/* the introduction  container styling  */
 .our-Events_Intro
   {
     display: flex;
@@ -1014,6 +1083,7 @@ section
     transition: all 1s ease;
    
   }
+   /* give animation to the events heading  */
   .our-Events_Intro .animate
 {
  transform: translateY(0);
@@ -1022,12 +1092,14 @@ section
 
 
 }
+/* give animation to the events heading  */
  .our-Events_Intro.Show-Animation .animate
 {
  transform: translateY(-80%);
  opacity: 1;
 }  
 
+/* give styling to the  events heading   */
 .our-Events_Intro h2
 {
   position: relative;
@@ -1035,16 +1107,18 @@ section
   padding:10px;
   font-size: 30px;
 }
+ /* before and after elements added with styling  */
 .our-Events_Intro h2::before,
 .our-Events_Intro h2::after
  {
   content: '';
   position: absolute;
   bottom: 0;
-  width: 43%; /* Adjust as needed */
-  height: 2.5px; /* Thickness of the lines */
+  width: 43%; 
+  height: 2.5px; 
   background-color: #99582a; 
 }
+  
 .our-Events_Intro h2::before
 {
   left: 0;
@@ -1054,7 +1128,7 @@ section
 {
   right: 0;
 }
-
+ /* give symbol  */
 .our-Events_Intro h2 .material-symbols-outlined
 {
   position:absolute;
@@ -1066,7 +1140,7 @@ section
   font-weight: bold;
 }
 
-
+ /* give styling to the  events heading   */
 .our-Events_Intro h4
 {
   position: relative;
@@ -1076,7 +1150,7 @@ section
   font-size: 20px;
   font-weight: 600;
 }
-
+ /* give events information container styling  */
 .Events_info
 {
   display: flex;
@@ -1089,6 +1163,7 @@ section
   background-color: transparent;
 }
 
+ /* give styling to all three events container  */
 .volunteer_Events, .Awareness_Events, .Maintenance_and_Safety
 {
   height: 400px;
@@ -1101,7 +1176,7 @@ section
   cursor: pointer;
 }
 
-
+  /* individual styling for background images  */
 .volunteer_Events 
 {
   background:url(/volunteer_img.jpg);
@@ -1109,6 +1184,8 @@ section
   opacity: 0.9;
   transition: 0.5s;
 }
+  /* individual styling for background images  */
+
 .Awareness_Events 
 {
   background:url(/Recycle_and_Reuse_img.jpg);
@@ -1116,6 +1193,8 @@ section
   opacity: 0.8; 
   transition: 0.5s;
 }
+  /* individual styling for background images  */
+
 .Maintenance_and_Safety 
 {
   background:url(/Maintenance_and_Safety_Workshops_img.jpg);
@@ -1123,6 +1202,7 @@ section
   opacity: 0.8;
   transition: 0.5s;
 }
+ /* give hover effect to the container with different background color and animations  */
 .volunteer_Events:hover 
 {
   background: linear-gradient(rgba(255, 105, 5, 0.4), rgba(255,0,0,0.4)),url(./volunteer_img.jpg);
@@ -1130,6 +1210,8 @@ section
   transform:scale(1.09);
 
 }
+ /* give hover effect to the container with different background color and animations  */
+
 .Awareness_Events:hover
 {
   background:linear-gradient(rgba(255, 105, 5, 0.4), rgba(255,0,0,0.4)),url(/Recycle_and_Reuse_img.jpg);
@@ -1137,6 +1219,8 @@ section
   transform:scale(1.09);
  
 }
+ /* give hover effect to the container with different background color and animations  */
+
 .Maintenance_and_Safety:hover
 {
   background:linear-gradient(rgba(255, 105, 5, 0.4), rgba(255,0,0,0.4)),url(/Maintenance_and_Safety_Workshops_img.jpg);
@@ -1144,6 +1228,7 @@ section
   transform:scale(1.09);
 }
 
+/* all three inner text container  styling  */
 .Awareness_Events-inner-text, .Maintenance_and_Safety-inner-text, .volunteer_Events-inner-text
 {
   height: 400px;
@@ -1156,7 +1241,7 @@ section
   transition: 0.5s;
   color: #6f1d1b;
 }
-
+/* give styling to the  h2  heading for events  */
 .Awareness_Events-inner-text h2, .Maintenance_and_Safety-inner-text h2, .volunteer_Events-inner-text h2
 {
   font-family: "Zen Tokyo Zoo", system-ui;
@@ -1165,13 +1250,13 @@ section
   text-align: center;
   font-style: normal;
 }
-
+/* give styling to peragraph  */
 .Awareness_Events-inner-text p, .Maintenance_and_Safety-inner-text p, .volunteer_Events-inner-text p
 {
   text-align: center;
   margin-top: 10px;
 }
-
+ /* give styling to ancor tag */
 .Awareness_Events-inner-text a, .Maintenance_and_Safety-inner-text a, .volunteer_Events-inner-text a
 {
   text-align: center;
@@ -1179,16 +1264,18 @@ section
   color: whitesmoke;
   margin-top: 20px;
 }
+ /* give hover effect  */
 .Awareness_Events-inner-text a:hover, .Maintenance_and_Safety-inner-text a:hover, .volunteer_Events-inner-text a:hover
 {
   color: #F1A661;
 }
-
+ 
 .Awareness_Events-inner-text span, .Maintenance_and_Safety-inner-text span, .volunteer_Events-inner-text span
 {
   position: absolute;
 
 }
+ /* give hover effect  */
 .Awareness_Events-inner-text:hover, .Maintenance_and_Safety-inner-text:hover, .volunteer_Events-inner-text:hover
 {
   height: 500px;
@@ -1198,6 +1285,7 @@ section
 
 }
 
+ /* give events heading  after container styling */
 .Events-Headings
 {
   display: flex;
@@ -1208,12 +1296,14 @@ section
   width: 100%;
   background-color: transparent;
 }
+ /* give heading styling  */
 .volunteer_Events-heading, .Awareness_Events-heading, .Maintenance_and_Safety-heading
 {
   position: relative;
   text-align: center;
   padding-bottom: 10px;
 }
+ /* give before elements  */
  .volunteer_Events-heading::before, .Awareness_Events-heading::before, .Maintenance_and_Safety-heading::before
 {
   content: "";
@@ -1224,6 +1314,7 @@ section
   background-color: #290001;
   left: 0;
 }  
+ /* give after elements  */
 .volunteer_Events-heading::after, .Awareness_Events-heading::after, .Maintenance_and_Safety-heading::after
 {
   content: "";
@@ -1234,6 +1325,7 @@ section
   background-color: #290001;
   right: 0;
 }
+ /* give styling to the span element */
 .volunteer_Events-heading span
 {
   position: absolute;
@@ -1243,6 +1335,8 @@ justify-content: center;
 transform: translateX(106px);
 font-weight: 500;
 }
+ /* give styling to the span element */
+
 .Awareness_Events-heading span
 {
   position: absolute;
@@ -1252,6 +1346,8 @@ justify-content: center;
 transform: translateX(105px);
 font-weight: 500;
 }
+ /* give styling to the span element */
+
 .Maintenance_and_Safety-heading span
 {
   position: absolute;
@@ -1269,7 +1365,7 @@ font-weight: 500;
 {
    margin-left: 7%; 
 }
-
+ /* give styling to events discription container  */
 .Event-Discription
 {
   display: flex;
@@ -1280,6 +1376,7 @@ font-weight: 500;
   width: 100%;
   background-color: transparent;
 }
+ /* peragraph styling  */
 .volunteer_Events-pera, .Awareness_Events-pera, .Maintenance_and_Safety-pera
 {
   display: flex;
@@ -1292,6 +1389,7 @@ font-weight: 500;
   margin-right: 25px;
   margin-bottom: 2%;
 }
+ /* ancor box  styling  */
 .ancor_box
 {
   display: flex;
@@ -1299,6 +1397,7 @@ font-weight: 500;
   width: 100%;
 
 }
+/* ancor styling   */
 .ancor_box a
 {
   position: relative;
@@ -1320,6 +1419,7 @@ font-weight: 500;
   cursor: pointer;
   transition: color 300ms ease;
 }
+ 
  .a-3
 {
   margin-right: 25px;
@@ -1329,6 +1429,7 @@ font-weight: 500;
   color: #F4E0B9;
 }
 
+ /* give befor elements  */
 .ancor_box a::before
 {
   content:'';
@@ -1344,12 +1445,14 @@ font-weight: 500;
   transform: scaleX(0);
   transition: transform 300ms ease-in-out;
 }
+ /* give hover effect  */
 .ancor_box a:hover::before
 {
    transform: scaleX(1);
   
 }
 
+ /* give after elements */
 .ancor_box a::after
 {
   position: relative;
@@ -1358,11 +1461,13 @@ font-weight: 500;
   opacity: 0;
   
 }
+ /* give hover effect */
 .ancor_box a:hover::after
 {
   opacity: 1;
   transition: all 0.3s;
 }
+ /* styling to dive 6  */
 
 .div6
 {
@@ -1374,6 +1479,7 @@ font-weight: 500;
   background-attachment: fixed;
 }
 
+ /* give styling to the hr  */
 .Our-collection hr
 {
   width: 40%;
@@ -1381,6 +1487,7 @@ font-weight: 500;
   color: #DBCBBD;
 
 }
+ /* styling to heading  */
 .Our-collection h1
 {
   position: relative;
@@ -1391,11 +1498,14 @@ font-weight: 500;
   font-family: "Lobster", sans-serif;
   
 }
+ /* give styling to the first letter  */
 
 .Our-collection h1::first-letter 
 {
   font-size: 150%;
 }
+ /* give before element
+  */
 .Our-collection h1::before
 
 {
@@ -1408,16 +1518,18 @@ font-weight: 500;
   color: #DBCBBD;
  
 }
+ /* give before element to the h1  */
  .Our-collection h1::before
 {
 
   left: 0;
 }
+ /* give after elements  */
 .Collection-heading::after
 {
   right: 0;
 } 
-
+  /* styling to container  */
 .container-1
 {
   height: 300px;
@@ -1428,6 +1540,7 @@ font-weight: 500;
   align-items: center;
   justify-content: space-around;
 }
+  /* styling to container  */
 
 .container-2
 {
@@ -1441,7 +1554,7 @@ font-weight: 500;
   justify-content:space-around;
 }
 
-
+ /* give stylig to the h4  */
 .container-1 h4, .container-2 h4
 {
   position:relative;
@@ -1450,6 +1563,7 @@ font-weight: 500;
   color: #F1A661;
   font-size: 25px;
 }
+ /* give before and after elements to  h4  */
 .container-1 h4::before, .container-2 h4::before,
 .container-1 h4::after, .container-2 h4::after
 {
@@ -1461,6 +1575,7 @@ font-weight: 500;
   background-color: #F1A661;
 
 }
+ /* give styling of span elements  */
 .container-1 h4 span
 {
   position: absolute;
@@ -1470,6 +1585,8 @@ font-weight: 500;
   color: #FDEEDC;
 
 }
+ /* give styling of span elements  */
+ 
 .container-2 h4 span
 {
   position: absolute;
@@ -1478,6 +1595,7 @@ font-weight: 500;
   top: 23px;
   color: #FDEEDC;
 }
+ 
 .container-1 h4::before, .container-2 h4::before
 {
   right: 0;
@@ -1486,6 +1604,7 @@ font-weight: 500;
 {
   left: 0;
 }
+/* paragrap styling  */
 .container-1 p, .container-2 p
 {
   text-align: start;
@@ -1493,6 +1612,7 @@ font-weight: 500;
   font-size: 18px;
   color: #DBCBBD;
 }
+ /* ancor styling  */
 .container-1 a, .container-2 a
 {
   position: relative;
@@ -1509,6 +1629,7 @@ font-weight: 500;
   cursor: pointer;
   transition: color 300ms ease;
 }
+ /* before element added  */
 
 .container-1 a::before, .container-2 a::before
 {
@@ -1525,6 +1646,7 @@ font-weight: 500;
   transform: scaleX(0);
   transition: transform 300ms ease-in-out;
 }
+ /* hover effect  */
 .container-1 a:hover::before, .container-2 a:hover::before
 {
    transform: scaleX(1);
@@ -1551,7 +1673,7 @@ font-weight: 500;
   color: #290001;
 }
 
-
+ /* give animation to the collection container  */
 .Our-collection  .animate
 {
  transform: translateY(100%);
@@ -1560,12 +1682,15 @@ font-weight: 500;
 
 
 }
+ /* give animation to the collection  container */
+ 
 .Our-collection.Show-Animation .animate
 {
  transform: translateY(-10%);
  opacity: 1;
 }  
 
+ /* give animation to the collection  container */
 
 .Our-collection  .animate-2
 {
@@ -1575,12 +1700,14 @@ font-weight: 500;
 
 
 }
+ /* give animation to the collection  container */
+
 .Our-collection.Show-Animation .animate-2
 {
  transform: translateX(0%);
  opacity: 1;
 } 
-
+ /* givestyling to the left container */
 .Our-collection_content-left
 {
   height:600px;
@@ -1594,6 +1721,7 @@ font-weight: 500;
  clip-path: polygon(60% 0%, 100% 0%, 100.1% 52.3%, 100% 100%, 60% 100.3%, 42.1% 50%);
 }
 
+ /* left container  heading styling  */
 .Our-collection_content-left-Inner-div-Heading
 {
   position: absolute;
@@ -1605,7 +1733,8 @@ font-weight: 500;
   font-family: "Zen Tokyo Zoo", system-ui;
   font-weight:500;
 }
-
+ 
+/* styling  to inner div  of our collection  div  */
 .Our-collection_content-left-Inner-div
 {
   height: 100%;
@@ -1621,6 +1750,7 @@ font-weight: 500;
 
 }
 
+ /* give styling to hr  */
 .Our-collection_content-left-Inner-div hr
 {
   width: 100%;
@@ -1630,6 +1760,7 @@ font-weight: 500;
   z-index: -1; 
 }
 
+ /* give styling to the inner block of the container  */
 .block-1, .block-2, .block-3
 {
   height: 200px;
@@ -1642,12 +1773,14 @@ font-weight: 500;
 
   
 }
+ /* heading styling  */
 .block-1 h5, .block-2 h5, .block-3 h5
 {
   padding: 10px;
   font-size: 17px;
   color: #290001;
 }
+ /* image styling  */
 .block-1 img, .block-2 img, .block-3 img
 {
   position: absolute;
@@ -1658,6 +1791,7 @@ font-weight: 500;
  z-index: -1;
 }
 
+ /* footer styling  */
  Footer
 {
  position: absolute;
@@ -1667,6 +1801,7 @@ font-weight: 500;
   font-size: 13px;
   line-height: 20px;
 } 
+ /* give hr styling  */
 footer .hr-2
 {
  position:absolute;
@@ -1676,7 +1811,8 @@ color: #DBCBBD;
 margin-bottom: 10px;
 margin-left: 4%;
 }
-  
+ 
+ /* give styling  to the row container  */
 .Row
 {
   width: 100%;
@@ -1686,6 +1822,8 @@ margin-left: 4%;
   align-items: flex-start;
   justify-content:space-evenly;
 }
+ /* give hr styling  */
+ 
 .Row hr
 { position: absolute;
   margin-bottom: 5%;
@@ -1693,44 +1831,49 @@ margin-left: 4%;
   width: 60%;
   color: #DBCBBD;
 }
+ /* give styling to  col container  */
 .col
 {
   flex-basis: 15%;
  
   }
 
-
+ /* image styling  */
 .col img
 {
   margin-bottom:8%;
   width: 150px;
 
 } 
+ /* h3 styling  */
 .col h3
 {
   font-weight: 700;
   font-size: 20px;
   margin-bottom:20px;
 }
+ /* give dtyling to the colom 2  */
 .col-2
 {
   margin-top: 5%;
   border-right:  2px solid #DBCBBD;
   flex-basis: 15%;
 }
+ /* give styling to the list  */
 .col-2 ul li
 {
   list-style: none;
   margin-bottom: 5px;
   transition: transform 0.3s ease-in;
 }
+ /* give hover effect  */
 .col-2 ul li:hover
 {
   transform:scale(1.1);
   color: #F1A661;
  
 }
-
+/* give before element */
 .col-2 ul li::before
 {
   content:'»';  
@@ -1739,41 +1882,46 @@ margin-left: 4%;
   width: 20px;
   position:relative;
 }
+ /* give styling to the ancor  */
 .col-2 ul li a 
 {
   text-decoration: none;
   font-size: 15px;
   color: #DBCBBD;
 }
+ /* give hover effect  */
 .col-2 ul li a:hover
 {
   
   color: #F1A661;
 }
 
+ /* give styling to the col-3 container  */
 .col-3
 {
   margin-top: 5%;
   padding-right: 10px;
   border-right: 2px solid #DBCBBD;
 }
+ /* give styling to ul  */
 .col-3 ul
 {
   margin-bottom: 0%;
 }
-
+ /* give styling to li  */
 .col-3 ul li
 {
   list-style: none;
   margin-bottom: 5px;
   transition: transform 0.3s ease-in;
 }
-
+ /* give hover effect  */
 .col-3 ul li:hover
 {
   transform:scale(1.1);
   color: #F1A661;
 }
+ /* give  styling to before elements to the list  */
 .col-3 ul li::before
 {
   content:'»';  
@@ -1782,18 +1930,21 @@ margin-left: 4%;
   width: 20px;
   position:relative;
 }
+ /* give ancor styling  */
 .col-3 ul li a 
 {
   text-decoration: none;
   font-size: 15px;
   color: #DBCBBD;
 }
+ /* give hover effect  */
 .col-3 ul li a:hover
 {
   
   color: #F1A661;
 }
-
+/* give col-4 styling 
+ */
 
 .col-4
 {
@@ -1801,17 +1952,20 @@ margin-left: 4%;
   padding-right: 10px;
   border-right: 2px solid #DBCBBD;
 }
+ /* li styling  */
 .col-4 ul li
 {
   list-style: none;
   margin-bottom: 5px;
   transition: transform 0.3s ease-in;
 }
+ /* hover effect  */
 .col-4 ul li:hover
 {
   transform:scale(1.09);
   color: #F1A661;
 }
+ /* give before element  */
 .col-4 ul li::before
 {
   content:'»';  
@@ -1820,18 +1974,21 @@ margin-left: 4%;
   width: 20px;
   position:relative;
 }
+ /* give ancor styling  */
 .col-4 ul li a 
 {
   text-decoration: none;
   font-size: 15px;
   color: #DBCBBD;
 }
+ /* give hover effect  */
 .col-4 ul li a:hover
 {
   
   color: #F1A661;
 }
 
+ /* styling to the col-5 container  */
 .col-5
 {
 
@@ -1839,12 +1996,14 @@ margin-left: 4%;
   padding-right: 10px;
  
 }
+ /* styling to image  */
 .col-5 img
 {
   height: 250px;
   width: 250px;
 }
 
+ /* give styling to the copyright and follow us container  */
 .copyright_And_Follow-us
 {
 position: absolute;
@@ -1859,11 +2018,13 @@ bottom: 10px;
 left: 0;
 right: 0;
 }
+ /* give peragraph styling  */
 .copyright_And_Follow-us p
 {
  margin-left: 10%;
 
 }
+ /* give styling to ul  */
 .copyright_And_Follow-us ul
 {
   display: flex;
@@ -1872,21 +2033,25 @@ right: 0;
   list-style: none;
   margin-right: 10px;
 }
+/* give stylin to li  */
 .copyright_And_Follow-us li
 {
   padding: 8px;
   font-size: 20px;
-
 }
+
+/* }give styling to the image  */
 .copyright_And_Follow-us li img 
 {
   height: 25px;
   width: 25px;
 }
+  /* give styling to the ancor  */
 .copyright_And_Follow-us li a
 {
   text-decoration: none;
 }
+ /* give stylingto the hr  */
 .copyright_And_Follow-us hr
 {
 position:absolute;

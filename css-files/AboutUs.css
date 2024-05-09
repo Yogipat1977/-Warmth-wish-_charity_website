@@ -1,4 +1,5 @@
 *{
+    /* Applying styles to all elements */
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -10,6 +11,7 @@
 
   .div-1
   {
+     /* Styling for div1 element */
     background-color: #F4E0B9;
     display: flex;
     justify-content: space-between;
@@ -17,14 +19,14 @@
     width: 100%;
     padding: 1%;
   }
-  
+    /* give some style to the ancor  */
   .div-1 a
   {
     height: 130px;
     width: 200px;
   }
 
-
+  /* give style to div1 image */
    .div-1 img
 {
     height: 130px;
@@ -32,6 +34,7 @@
     margin-bottom: 20px;
      cursor: pointer;
 } 
+/* give some style to the btn class which is a container for login and sign in link  */
 
 .btn
  {
@@ -45,6 +48,7 @@
 
 }
 
+     /* styling for btn ancors  */
      
  .btn a
  {
@@ -63,6 +67,8 @@
      cursor: pointer;
      transition: color 300ms ease;
  }
+  /* give before psudo element  */
+
  .btn a::before
  {
 content: '';
@@ -81,16 +87,21 @@ position: absolute;
  }
 
 
+ /* give our hover animation to before  */
  
  .btn a:hover::before
  {
   transform: scaleX(1);
  }
+  /* give  hover on ancor  */
+
  .btn a:hover
+
  {
    color: #FDEEDC;
  }
  
+  /* give styling to the .Introduction_div */
 .Introduction_div
 {
     position: relative;
@@ -100,6 +111,7 @@ position: absolute;
     background-color: #293040;
     clip-path: polygon(0% 0%, 100.1% 0%, 100% 100%, 0% 69.3%);
 }
+ /* give inner dive styling  */
 .Introduction_div-Inner_div_1
 {
     position: absolute;
@@ -111,6 +123,7 @@ position: absolute;
     align-items: start;
     flex-direction:column ;
 }
+ /* give stylin to the  heading  */
 .Introduction_div-Inner_div_1 h2
 {
      
@@ -119,10 +132,12 @@ position: absolute;
     position: relative;
    
 }
+ /* give styling ot the first latter of heading  */
 .Introduction_div-Inner_div_1 h2::first-letter
 {
     font-size: 150%;
 }
+ /* give pereagraph styling  */
 .Introduction_div-Inner_div_1 p
 {
     color: #FFE6A7;
@@ -133,6 +148,7 @@ position: absolute;
     align-items: center;
     flex-direction: column;
 }
+ /* give styling to the second inner div  */
 .Introduction_div-Inner_div_2
 {
     position: absolute;
@@ -147,6 +163,8 @@ position: absolute;
     border-radius: 68% 32% 66% 33% / 60% 52% 48% 39%;
     
 }
+ /* give styling to the third inner  div  */
+
 .Introduction_div-Inner_div_3
 {
     position: absolute;
@@ -162,7 +180,8 @@ position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
 
-}
+} 
+ /* styling to the .Missinon_statement-Div  */
 .Missinon_statement-Div
 {
     height: 500px; 
@@ -171,6 +190,7 @@ position: absolute;
     flex-direction: column;
 }
 
+ /* heading styling  */
 .Missinon_statement-Div h2
 {
     text-align:start;
@@ -179,11 +199,12 @@ position: absolute;
     margin-left: 10%;
     color: #290001;
 }
+ /* first latter styling  */
 .Missinon_statement-Div h2::first-letter
 {
     font-size: 150%;
 }
-
+/* give styling to the .Missinon_statement inner div  */
 .Missinon_statement-Inner-Div-1
 {
   
@@ -200,10 +221,12 @@ position: absolute;
     flex-direction:column ;
     
 }
+ /* peragraph styling  */
 .Missinon_statement-Inner-Div-1 p
 {
     font-size: 17px;
 }
+ /* styling to the second inner div  */
 .Missinon_statement-Inner_div_2
 {
     position: absolute;
@@ -214,7 +237,9 @@ position: absolute;
     margin-right: 10% ;
     background-color: #290001;
     border-radius: 65% 35% 65% 35% / 39% 28% 71% 61%;
-}.Missinon_statement-Inner_div_3
+}
+ /* styling to the third inner div  */
+.Missinon_statement-Inner_div_3
 {
     position: absolute;
     right: 0;
@@ -226,6 +251,7 @@ position: absolute;
     border-radius: 46% 54% 38% 62% / 33% 58% 42% 67%;
     background-size: cover;
 }
+ /* styling to the what we do div  */
 .what_we_do-div
 {
     
@@ -234,7 +260,7 @@ position: absolute;
     display: flex;
     flex-direction: column;
 }
-
+/* heading styling  */
 .what_we_do-div h2
 {
     text-align:end;
@@ -242,10 +268,12 @@ position: absolute;
     margin: 40px;
     margin-right: 30%;
 }
+ /* first latter styling  */
 .what_we_do-div h2::first-letter
 {
     font-size: 150%;
 }
+ /* what we do inner div styling  */
 .What_we_do-Inner-Div-1
 {
     position: relative;
@@ -259,10 +287,12 @@ position: absolute;
     flex-basis: 50%;
     flex-direction:column ;
 }
+ /* pera graph styling  */
 .What_we_do-Inner-Div-1 p
 {
     font-size: 17px;
 }
+ /* second inner div styling  */
 .What_we_do-Inner-Div-2
 {
     position: absolute;
@@ -273,7 +303,9 @@ position: absolute;
     margin-left: 10% ;
     background-color: #290001;
     border-radius: 65% 35% 65% 35% / 39% 28% 71% 61%;
-}.What_we_do-Inner-Div-3
+}
+ /* third  inner div styling  */
+ .What_we_do-Inner-Div-3
 {
     position: absolute;
     left: 0;

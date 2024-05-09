@@ -1,12 +1,16 @@
 *{
+  /* Applying styles to all elements */
+
     box-sizing: border-box;
     padding: 0;
     margin: 0;
   } 
+
   body
   {
   background-color: #FDEEDC;
   }
+  /* Styling for div1 element */
 
   .div-1
   {
@@ -17,6 +21,7 @@
     width: 100%;
     padding: 1%;
   }
+  /* give some style to the ancor  */
   
   .div-1 a
   {
@@ -24,6 +29,7 @@
     width: 200px;
   }
 
+  /* give style to div1 image */
 
    .div-1 img
 {
@@ -35,7 +41,7 @@
 
 
 
-
+ /* give styling to the main div  */
 .space-for_log-in-sign-in
 {
     height: 750px;
@@ -45,14 +51,15 @@
    align-items: center;
 }
 
+ /* give styling to the line  */
 .vartical-line 
 {
 
   height: 90%;
-  border-right: 2px solid #290001; /* Change color as needed */
+  border-right: 2px solid #290001; 
 
 }
-
+ /* give login dive  styling */
 
 .div-for-log-in
 {
@@ -66,6 +73,7 @@
      justify-content: space-evenly;
      align-items: center;
 }
+ /* give sign in div styling  */
 .div-for-sign-in
 {
     height: 670px;
@@ -78,38 +86,40 @@
     justify-content: center;
 }
 
-
+ /* give styling to h2  */
 .div-for-sign-in h2
 {
     color: #F4E0B9;
     font-size: 30px;
     margin-top: 5%;
 }
-
+ /* give styling to span  */
 .div-for-sign-in h2 span
 {
     color: #99582A;
     font-size: 40px;
 }
+ /* give styling to heading  */
 .div-for-log-in h2
 {
     color: #F4E0B9;
     font-size: 30px;
 }
+ /* give styling to span  */
 .div-for-log-in h2 span
 {
     color: #99582A;
     font-size: 40px;
 }
 
+ /* paragraph styling  */
 .div-for-log-in p
 {
     color: #F4E0B9;
     text-align: center;
     font-size: 20px;
 }
-
-
+ /* give styling to the div  */
 .input-name,.input-Email
 {
     height: 8%;
@@ -120,6 +130,8 @@
     align-items: center;
     border-radius: 50px;
 }
+/* give styling to  name imput  and email input   */
+ 
 .input-name input,.input-Email input
 {
     height: 20px;
@@ -130,6 +142,7 @@
     border: none;
     color: #F4E0B9;
 }
+ /* give  styling to label  */
  .input-name label, .input-Email label
 {
     position: absolute;
@@ -140,6 +153,7 @@
     background-color: #293040;
     color: #F4E0B9;
 } 
+ /* give styling to div  */
 .input-Contact
 {
     height: 8%;
@@ -150,6 +164,7 @@
     align-items: center;
     border-radius: 50px;
 }
+ /* give styling to input  */
 
 .input-Contact input
 {
@@ -161,6 +176,7 @@
     border: none;
     color: #F4E0B9;
 }
+ /* give styling to  lable  */
 .input-Contact label
 {
     position: absolute;
@@ -171,6 +187,7 @@
     background-color:#293040;
      color: #F4E0B9;
 }
+ /* give styling to selection  */
 .select-gender
  {
     position: relative; 
@@ -184,6 +201,7 @@
     align-items: center;
     border-radius: 50px;
 }
+ /* give styling to lable  */
 .select-gender label
 {
     position: absolute;
@@ -193,7 +211,8 @@
     transform: translateY(-135%);
     background-color: #293040;
     color: #F4E0B9;
-}
+} 
+/* give styling to select  */
 .select-gender select
 {
     height: 20px;
@@ -204,7 +223,7 @@
     border: none;
     color: #F4E0B9;
 }
-
+ /* give styling to address  */
 .Address
 {
     height: 8%;
@@ -216,7 +235,7 @@
     align-items:start;
     border-radius: 40px;
 }
-
+ /* give styling label  */
 .Address label
 {
     position: absolute;
@@ -227,6 +246,7 @@
     background-color: #293040;
     color: #F4E0B9;
 }
+ /* give input styling  */
 .Address input
 {
     height: 20px;
@@ -238,6 +258,8 @@
     border: none;
     color: #293040;
 }
+ /* give styling to input  */
+
  .submit-class input
  {
      height: 50%;
@@ -250,6 +272,7 @@
      cursor: pointer;
  }
 
+  /* give styling to div  */
  .input-pasword
  {
     height: 8%;
@@ -260,6 +283,8 @@
     align-items: center;
     border-radius: 50px;
  }
+ /* give styling to input  */
+
   .input-pasword input
   {
     height: 20px;
@@ -270,6 +295,8 @@
     border: none;
     color: #F4E0B9;
 }
+ /* give styling label  */
+
   .input-pasword label
   {
     position: absolute;
@@ -280,6 +307,8 @@
     background-color: #293040;
     color: #F4E0B9;
   }
+  /* give styling to div  */
+
 .input-Email-2
 {
     height: 8%;
@@ -290,6 +319,8 @@
     align-items: center;
     border-radius: 50px;
 }
+ /* give styling to input  */
+
 .input-Email-2 input
 {
     height: 20px;
@@ -300,6 +331,8 @@
     border: none;
     color: #F4E0B9;
 }
+ /* give styling label  */
+
  .input-Email-2 label
 {
     position: absolute;

@@ -1179,7 +1179,7 @@ section
   /* individual styling for background images  */
 .volunteer_Events 
 {
-  background:url(/volunteer_img.jpg);
+  background:url(./volunteer_img.jpg);
   background-size: cover; 
   opacity: 0.9;
   transition: 0.5s;
@@ -1188,7 +1188,7 @@ section
 
 .Awareness_Events 
 {
-  background:url(/Recycle_and_Reuse_img.jpg);
+  background:url(./Recycle_and_Reuse_img.jpg);
   background-size: cover;
   opacity: 0.8; 
   transition: 0.5s;
@@ -1197,7 +1197,7 @@ section
 
 .Maintenance_and_Safety 
 {
-  background:url(/Maintenance_and_Safety_Workshops_img.jpg);
+  background:url(./Maintenance_and_Safety_Workshops_img.jpg);
   background-size: cover; 
   opacity: 0.8;
   transition: 0.5s;
@@ -1214,7 +1214,7 @@ section
 
 .Awareness_Events:hover
 {
-  background:linear-gradient(rgba(255, 105, 5, 0.4), rgba(255,0,0,0.4)),url(/Recycle_and_Reuse_img.jpg);
+  background:linear-gradient(rgba(255, 105, 5, 0.4), rgba(255,0,0,0.4)),url(./Recycle_and_Reuse_img.jpg);
   background-size: cover; 
   transform:scale(1.09);
  
@@ -1223,7 +1223,7 @@ section
 
 .Maintenance_and_Safety:hover
 {
-  background:linear-gradient(rgba(255, 105, 5, 0.4), rgba(255,0,0,0.4)),url(/Maintenance_and_Safety_Workshops_img.jpg);
+  background:linear-gradient(rgba(255, 105, 5, 0.4), rgba(255,0,0,0.4)),url(./Maintenance_and_Safety_Workshops_img.jpg);
   background-size: cover; 
   transform:scale(1.09);
 }
